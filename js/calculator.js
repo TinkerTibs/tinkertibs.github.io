@@ -5,7 +5,7 @@ function checkAnswer() {
     let operator = (document.getElementById("operator").value);
     let solution = parseFloat(document.getElementById("solution").value);
     //PROCESSING
-    //creating switch to diferinciate operators
+    //creating switch to differentiate  operators
 switch (operator) {
     case "+":
         answerKey = number1 + number2;
