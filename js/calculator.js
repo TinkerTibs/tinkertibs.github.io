@@ -22,9 +22,9 @@ switch (operator) {
 }
 //if statement to verify if solution entered is correct
 if (answerKey == solution) {
-    message = "Correct!"
+    message = "Correct!";
 }   else {
-    message = "Incorrect"
+    message = "Incorrect";
 }
     //OUTPUT
     document.getElementById("output").textContent = message;
