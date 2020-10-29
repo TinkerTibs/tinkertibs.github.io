@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT 160 Simple Calc - Christina Thibodeau</title>
+    <title>CIT 160 Sales Conditional Discount - Christina Thibodeau</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Week 6: Simple Calc</h1>
+        <h1>Week 6: Sales Conditional Discount</h1>
         <h2>Christina Thibodeau</h2>
     </header>
     <main>
-        <h3>Simple Calculator</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-        <label>Enter Number Two: <input type="text" id="number2"></label>
-        <label>Enter Arithmetic Operator (+ - * or /): <input type="text" id="operator"></label>        
-        <label>Enter Solution: <input type="text" id="solution"></label>   
-        <label><button type="button" onclick="checkAnswer()">Check Answer</button></label>
+        <h3>Sales Conditional Discount</h3>
+        <label>Enter Subtotal: <input type="text" id="subtotal"></label>     
+        <label><button type="button" onclick="calculateTotal()">Order Total</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
     <footer>
         &copy;2020 &bull; Christina Thibodeau &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    <script src="js/calculator.js"></script>
+    <script src="js/discount.js"></script>
 </body>
 </html>
