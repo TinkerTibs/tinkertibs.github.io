@@ -6,7 +6,7 @@ function calculateTotal() {
 
     // input from the computer to determine day of the week
     let dayOfWeek = new Date().getDay();
-    
+
     //PROCESSING
 
     //if statement to apply discount if the purchase is over 50 on tuesday or wednesday
@@ -20,5 +20,5 @@ function calculateTotal() {
     //OUTPUT
 
     //outputs the cost after possible discount and tax are added
-    document.getElementById("output").textContent = withTax.toFixed(2);
+    document.getElementById("output").innerHTML = "$" + withTax.toFixed(2);
 }
