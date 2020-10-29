@@ -6,8 +6,10 @@ function sleepCheck() {
     let dayOfMonth = now.getDate();
     let dayOfWeek = now.getDay();
     //PROCESSING
-
-    message = new Date();
+    let message = "Get Up!";
+    if (dayOfWeek == 0 || dayOfWeek == 6 || (month == 0 && dayOfMonth == 1) || (month == 6 && dayOfMonth == 4) || (month == 11 && dayOfMonth == 25) ) {
+        message = "Sleep in";
+    } 
     //OUTPUT
     document.getElementById("output").textContent = message;
 }
