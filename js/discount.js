@@ -5,16 +5,20 @@ function calculateTotal() {
     let subtotal = parseFloat(document.getElementById("subtotal").value);
 
     // input from the computer to determine day of the week
-//    let dayOfWeek = new Date().getDay();
-    let dayOfWeek = 2;
+    let dayOfWeek = new Date().getDay();
+    
     //PROCESSING
 
+    //if statement to apply discount if the purchase is over 50 on tuesday or wednesday
     if (subtotal > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
-        subtotal = subtotal - (subtotal * .1 )
+        subtotal -= subtotal * .1;
     }
+
+    //adding tax
+    let withTax = subtotal * .06 + subtotal;
 
     //OUTPUT
 
-    //outputs the message
-    document.getElementById("output").textContent = subtotal;
+    //outputs the cost after possible discount and tax are added
+    document.getElementById("output").textContent = withTax.toFixed(2);
 }
