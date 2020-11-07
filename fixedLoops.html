@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT 160 Templet Document - Christina Thibodeau</title>
+    <title>CIT 160 Fix Loop Structures - Christina Thibodeau</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Week 2: Templet</h1>
+        <h1>Week 8: Fix Loop Structures</h1>
         <h2>Christina Thibodeau</h2>
     </header>
     <main>
-        <h3>Add Two Numbers</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-        <label>Enter Number Two: <input type="text" id="number2"></label>
-        <label><button type="button" onclick="addNumbers()">Add Numbers</button></label>
+        <h3>Fix Loop Structures</h3>
+        <label><button type="button" onclick="firstFix()">First Fix</button></label>
+        <div id="display1"></div>
         <hr>
-        <p><span id="output"></span></p>
+        <label><button type="button" onclick="secondFix()">Second Fix</button></label>
+        <div id="display2"></div>
+        <hr>
+        <label><button type="button" onclick="thirdFix()">Third Fix</button></label>
+        <div id="display3"></div>
+        <hr>
+        <label><button type="button" onclick="fourthFix()">Fourth Fix</button></label>
+        <div id="display4"></div>
     </main>
     <footer>
         &copy;2020 &bull; Christina Thibodeau &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        
+        //fixed first function
+        function firstFix() {
+            let output1 = '';
+            let i = 0;
+            while (i < 2) {
+                output1 += `Part 1:${i}<br>`;
+                i++;
+            }
+            document.getElementById('display1').innerHTML = output1;
+        }
+        //fixed second function
+        function secondFix() {
+            var output2 = '';
+            for (let j = 0; j < 3; j++) {
+                if (j != 2) {
+                    output2 += `Part 2:${j}, `;
+                }
+                else {
+                    output2 += `Part 2:${j}`;
+                }  
+            }
+            document.getElementById('display2').textContent = output2;
+        }
+        //fixed third function
+        function thirdFix() {
+            let output3 = '';
+            for (let k = 0; k < 4; k++) {
+                output3 += k + " ";
+            }
+            document.getElementById('display3').textContent = output3;
+        }
+        //fixed fourth function
+        function fourthFix() {
+            let balance = 1000;
+            const rate = .10;
+            let n = 30;
+            for (let s = 0; s < n; s++) {
+                interest = balance * rate;
+                balance += interest;                
+            }
+            document.getElementById('display4').textContent = balance;
+        }
+        //fith function
+        //the syntax is wrong because there should not be a ";" after "while (i < 3)"
     </script>
 </body>
 </html>
