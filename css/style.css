@@ -1,37 +1,65 @@
+@import url('link href="https://fonts.googleapis.com/css2?family=Milonga&family=Roboto&display=swap" rel="stylesheet"');
+
 body {
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
-header,
-footer {
+header {
 	background-color: #000;
 	color: #fff;
 	padding: 10px;
 }
 footer {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
 	font-size: 13px;
 	letter-spacing: 1.5pt;
 }
-
-h1,
-h2 {
+h1 {
 	margin: 0;
+	font-family: 'Milonga', cursive;
+	text-transform: uppercase;
 }
-
-h2, #currentdate {
-	color: yellow;
+h2 {
+	color: rgb(158, 158, 158);
+	font-size: 24px;
+	font-family: 'Milonga', cursive;
+	text-transform: uppercase;
+}
+h3 {
+	color: rgb(158, 158, 158);
+	font-family: 'Milonga', cursive;
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	padding: 5px;
+}
+p {
+	color: white;
 }
 main {
 	margin: 10px auto;
-	border: 1px solid #999;
+	border: 1px solid rgb(24, 24, 24);
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: rgb(20, 38, 92);
 	box-shadow: 0 0 30px;
+	border-radius: 10px;
 }
 label {
 	display: block;
 	margin: 5px;
+	color: white;
 }
-input, button {
+input {
 	padding: 10px;
+	border-radius: 5px;
+}
+button {
+	padding: 10px;
+	background-color:  rgb(194, 194, 194);
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
 }
