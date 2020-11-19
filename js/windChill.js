@@ -29,6 +29,6 @@ function doInputOutput() {
 //is always better this time of year
 function windChill(tempF, speed) {
     windchill = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (0.4275 * tempF * Math.pow(speed, .16));
-    return windchill.toFixed(2);
+    return windchill.toFixed(2) + " degrees Fahrenheit";
 }
 //sometimes I crack myself up
