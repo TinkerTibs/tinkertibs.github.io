@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Evaluation - Christina Thibodeau</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h3>Evaluate Code</h3>
+        <label><button type="button" onclick="testTrueFalseCode()">Test T/F Code</button></label>
+        <label><button type="button" onclick="testOutputString()">Test Output Code</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christina Thibodeau &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+
+        //use this function to determine true/false outputs
+        function testTrueFalseCode() {
+
+        //copy in the code from the exam here replacing the code between the "//"'s':
+
+        //
+            let x = 2, y = 6, z = 5; 
+            let result = (x == 2 ^ y > 5); 
+        //
+
+        //leave this alone - but make sure that the 'result' name is used in the copied in code
+        if (result == 1) {
+            message = "True";
+        } 
+        else if (result == 0) {
+            message = "False";
+        } 
+        document.getElementById('output').innerHTML = message;            
+        }
+
+
+
+
+        //use this fuction to determine which string will output when the code is run 
+        function testOutputString() {
+        
+        //copy in the code from the exam here replacing the code between the "//"'s':
+
+        //
+        let x = 1, y = 7;
+        let message = "Welcome";
+        if (x > 2) {
+            message = "Welcome Back";
+        }
+        else if (y > 10 && x === 2) { 
+            message = "Hello";
+        }
+        else {
+            message = "Goodbye";
+        }
+        document.getElementById('output').innerHTML = message;
+        // 
+
+        // make sure that 'output' is the ID used on the .getElementById code that was copied in
+        }
+        
+    </script>
+</body>
+</html>
