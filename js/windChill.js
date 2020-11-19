@@ -1,3 +1,6 @@
+//the lack of creativity on this function name is disappointing 
+//while acurate, it also doesn't tell me what it's about
+//maybe next semester name it function letsSeeIfItsReallyColdOutThere()
 function doInputOutput() {
 //INPUT 
     //values are taken from user input
@@ -14,6 +17,9 @@ function doInputOutput() {
     //outputs windchill to user
     document.getElementById("output").innerHTML = windchill;
 }
+
+
+
 
 //this function processes the temp and speed as peramiters, 
 //processes those peramiters through what I am calling the 'cold math' formula, 
