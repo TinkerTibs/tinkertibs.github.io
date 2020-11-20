@@ -41,6 +41,7 @@ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPa
     balanceAmount = principal * Math.pow((1 + (annualRate/periodsPerYear)), numberOfPaymentPaidToDate) - (((principal * (annualRate/periodsPerYear)) / (1 - Math.pow((1 + (annualRate/periodsPerYear)), -(years * periodsPerYear))) * (Math.pow(1 + (annualRate/periodsPerYear), numberOfPaymentPaidToDate) - 1)) / (annualRate/periodsPerYear))
     return "$" + balanceAmount.toFixed(2);
 }
+//my return is a little different from the figure image because theirs has a rounded payment per period number and I chose not to call the computePayment function inside the computeBalance function, because I wanted it to stand on its own.
 
 
     
