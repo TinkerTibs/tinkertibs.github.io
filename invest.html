@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 More Functions with Parameters - Christina Thibodeau</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 11: More Functions with Parameters</h1>
+        <h2>Christina Thibodeau</h2>
+    </header>
+    <main id="investAssignment">
+        <h3>Investment Calculator</h3>
+        <label>Amount invested (principal) <input type="text" id="invested"></label>
+        <label>Annual rate (example: .08) <input type="text" id="rate"></label>
+        <label>Number of years <input type="text" id="numberYears"></label>
+        <label>Periods per year <input type="text" id="periodsPerYear"></label>
+        <button type="button" onclick="doFV()">Compute future value</button>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christina Thibodeau &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/invest.js"></script>
+</body>
+</html>

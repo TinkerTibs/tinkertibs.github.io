@@ -64,3 +64,8 @@ button {
 	border: 1px solid black;
 	border-radius: 5px;
 }
+/* invest.html document*/
+#investAssignment label{
+	text-align: right;
+	padding-right: 50px;
+}
