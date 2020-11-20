@@ -6,7 +6,6 @@ function doFV() {
         let numberYears = parseFloat(document.getElementById("numberYears").value);
         let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
     //PROCESSING
-
         // calls second function
         let result = computeFutureValue(invested, rate, numberYears, periodsPerYear);
     //OUTPUT
@@ -14,8 +13,7 @@ function doFV() {
         document.getElementById("output").innerHTML = result;
     }
     
-    
-    
+    //this function does all the mathy things based on the arguments enetered on line 10 and returns the mathy's solution
     function computeFutureValue(principal, annualRate, years, periodsPerYear) {
         futureValue = principal * Math.pow((1 + (annualRate/periodsPerYear)), (years * periodsPerYear))
         return "$" + futureValue.toFixed(2);
