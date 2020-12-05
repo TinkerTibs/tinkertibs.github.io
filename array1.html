@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Arrays - Christina Thibodeau</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 12: Arrays</h1>
+        <h2>Christina Thibodeau</h2>
+    </header>
+    <main>
+        <h3>Arrays</h3>
+        <label><button type="button" onclick="test()">Check Answer</button></label>
+        <hr>
+        <div id="output"></div>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christina Thibodeau &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the addEnds and getMiddle functions by calling them.
+ * Output: The values returned from the addEnds and getMiddle functions.
+ */
+ function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the addEnds function by calling it two times.
+    let sum1 = addEnds(list1);
+    let sum2 = addEnds(list2);
+
+    // Test the getMiddle function by calling it two times.
+    let mid1 = getMiddle(list1);
+    let mid2 = getMiddle(list2);
+
+    // Build a string to display to the user.
+    let output =
+            sum1 + '<br>' +
+            sum2 + '<br>' +
+            mid1 + '<br>' +
+            mid2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+// This function finds the last index in a list and then adds the first and last value of the list
+function addEnds(list) {
+    let i = list.length - 1;
+    let sum = list[0] + list[i];
+    return sum;
+}
+/*  This function finds the last index in a list.
+    If the length of the list is an odd number it returns the value of the middle index,
+    otherwise it returns the average of the two values at the middle of the list.
+*/
+function getMiddle(list) {
+    let last = list.length - 1;
+    let mid;
+    if (list.length % 2 != 0) {
+        mid = list[last / 2];
+    }
+    else {
+        mid = (list[last / 2 + .5] + list[last / 2 - .5]) / 2
+    }
+    return mid;
+}
+
+    </script>
+</body>
+</html>
