@@ -1,0 +1,57 @@
+@import url('link href="https://fonts.googleapis.com/css2?family=Milonga&family=Roboto&display=swap" rel="stylesheet"');
+
+body {
+	width: 600px;
+	margin: 0 auto;
+}
+#upper {
+	position: relative;
+}
+#heading {
+	width: 600px;
+	background-color: rgb(4, 61, 14);
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+#heading h1 {
+	padding-left: 50px;
+}
+h1 {
+	font-family: 'Milonga', cursive;
+}
+#photo {
+	position: absolute;
+	right: -5px;
+	height: 151px;
+	top: 10px;	
+	box-shadow: 0 0 10px 5px rgb(143, 143, 143);
+}
+main {
+	padding-left: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+li a {
+	color: rgb(10, 163, 35);
+	text-decoration: none;
+}
+li a:hover {
+	color: rgb(143, 143, 143);
+}
+#footer {
+	font-family: 'Roboto', sans-serif;
+	width: 600px;
+	background-color: rgb(4, 61, 14);
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+footer p a {
+	color: white;
+}
+footer p a:hover {
+	color: rgb(143, 143, 143);
+}
+
