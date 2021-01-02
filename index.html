@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="lastModifiedDate()">
     <div id="upper">
     <div id="heading">
         <header>
@@ -30,12 +30,10 @@
     </main>
     <div id="footer">
         <footer>
-            <p>&copy;2021 &bull; Christina Thibodeau &bull; California &bull; <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-            <div onload="modifiedDate()"></div>
-            <div id="output"></div>
-</p> 
+        <p>&copy;2021 &bull; Christina Thibodeau &bull; California &bull; <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br><span id="output"></span></p>
         </footer>
     </div>
-    <script src="js/modifiedDate.js"></script>
+    <script src="js/lastModifiedDate.js"></script>
 </body>
 </html>
