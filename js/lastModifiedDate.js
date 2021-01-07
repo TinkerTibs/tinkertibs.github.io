@@ -1,4 +1,4 @@
-function lastModifiedDate() {
 var x = document.lastModified;
- document.getElementById("output").innerHTML = "Last Updated: " + x;
-}
+document.getElementById("output").textContent = "Last Updated: " + x;
+let y = new Date();
+document.getElementById("classYear").textContent = y.getFullYear();
