@@ -27,7 +27,7 @@ footer p a {
 	color: rgba(255, 255, 255, 1);
 }
 footer p a:hover {
-	color: rgba(78, 78, 78, 1);;
+	color: rgba(78, 78, 78, 1);
 }
 #mainColumns {
 	display: grid;
