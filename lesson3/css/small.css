@@ -23,9 +23,6 @@ header, footer {
 .backgroundGrey {
 	background-color: #cacfd4;
 }
-.backgroundLightBlue {
-	background-color: #87aeb4;
-}
 .backgroundDarkBlue {
 	background-color: #153e5c;
 }
@@ -42,14 +39,27 @@ header, footer {
 .textGrey {
 	color: #cacfd4;
 }
-.textLightBlue {
-	color: #87aeb4;
-}
 .textDarkBlue {
 	color: #153e5c;
 }
 .textBlack {
 	color: #000000;
+}
+/* tezt sizes */
+.size16 {
+	font-size: 16px;
+}
+.size20 {
+	font-size: 20px;
+}
+.size25 {
+	font-size: 25px;
+}
+.size30 {
+	font-size: 30px;
+}
+.size40 {
+	font-size: 40px;
 }
 /* color-scheme table settings */
 #colorTable {
@@ -62,7 +72,16 @@ header, footer {
 #colorTable td {
 	text-align: center;
 	vertical-align: bottom;
-	width: 200px;
+	width: 250px;
+	padding: 15px;
+}
+/*typography table settings */
+#typographyTable {
+	border-collapse: collapse;
+	margin: 15px;
+}
+#typographyTable td, #typographyTable th {
+	border:1px solid #000000;
 	padding: 15px;
 }
 
