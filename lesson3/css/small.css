@@ -18,9 +18,13 @@ header, footer {
 main {
 	padding: 15px;
 }
+/* This is not working
+but we want to use something like it to create an indent (padding) 
+on everything except the first child of each section
+
 main section:not(:first-child) {
 	padding-left: 15px;
-}
+} */
 img {
 	max-width: 100%;
 	height:	auto;
