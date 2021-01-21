@@ -149,6 +149,7 @@ nav ul {
 }
 nav ul li {
 	padding: 15px;
+	flex: 1 1 auto; /* nav buttons span full width*/
 }
 nav ul li a {
 	padding: 15px;
@@ -160,6 +161,7 @@ nav a:hover {
 }
 .active {
 	background-color: #cacfd4;
+	height: 23px;
 }
 .active a:hover {
 	color: #000000;
