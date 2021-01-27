@@ -119,7 +119,7 @@ nav a:hover {
 .secondNavBar button:hover {
 	color: #ffffff;
 }
-.secondNavBar button .highlightTab {
+.highlightTab {
 	background-color: #c1cdd5;	
 }
 .highlightTab:hover {
