@@ -220,20 +220,21 @@
         </section>
         <section id="sectionNameShorthand" class="sectionName" style="display: none;">
             <h3>Shorthand</h3>
-            <p>To illustrate the use of the shorthand <i>animation</i> property the following two examples create the same animation effect.</p>
+            <p>To illustrate the use of the shorthand animation property the following two examples create the same animation effect which can be seen in action by clicking on the box below.</p>
             <h4>Example</h4>
             <p class="codingText">div {
                 <br>&emsp;animation-name: example;
                 <br>&emsp;animation-duration: 4s;
-                <br>&emsp;animation-timing-function: linear;
+                <br>&emsp;animation-timing-function: ease-in;
                 <br>&emsp;animation-delay: 2s;
                 <br>&emsp;animation-iteration-count: infinite;
-                <br>&emsp;animation-fill-mode: alternate;
+                <br>&emsp;animation-fill-mode: none;
                 <br>}
             <h4>Example</h4>
             <p class="codingText">div {
-                <br>&emsp;animation: example 4s linear 2s infinite alternate;
-                <br>}
+                <br>&emsp;animation: example 4s ease-in 2s infinite none;
+                <br>}</p>
+            <button type="button" id="exampleShorthand" onclick="activateShorthand()">CSS Rocks!</button>
         </section>
     </main>
     <footer>

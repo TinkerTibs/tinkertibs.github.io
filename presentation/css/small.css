@@ -142,6 +142,14 @@ nav a:hover {
 	border: none;
 	position: relative;
 }
+#exampleShorthand {
+	padding:10px;
+	color: #ffffff;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+	margin-top: 50px;
+}
 /* added classes */
 .exampleOneAnimation {
 	animation-name: backgroundColorOne;
@@ -241,7 +249,17 @@ nav a:hover {
 .exampleFillBothAnimation {
 	animation-fill-mode: both;
 }
+.exampleShorthandAnimation {
+	animation: youSpinMeRightRound 4s ease-in 2s infinite none;
+}
 /* keyframes */
+@keyframes youSpinMeRightRound {
+	0%   {left: 0px; transform: rotate(0deg);}
+	35%  {background-color:#698497;left: 0px; transform: rotate(20deg);}	
+	65%  {background-color:#153e5c; left: 840px; transform: rotate(0deg);}
+	70%  {left: 840px; transform: rotate(0deg);}
+	100% {background-color:#698497;left: 0px; transform: rotate(-360deg);}
+}
 @keyframes moveToRightWithColor {
 	0%   {background-color: #000000; left:0px;}
 	100% {background-color: #698497; left:750px;}

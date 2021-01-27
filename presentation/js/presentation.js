@@ -53,6 +53,9 @@ function activateFill() {
     document.getElementById('exampleFillBackwards').classList.add('exampleFillBackwardsAnimation');
     document.getElementById('exampleFillBoth').classList.add('exampleFillBothAnimation');
 }
+function activateShorthand() {
+    document.getElementById('exampleShorthand').classList.add('exampleShorthandAnimation');
+}
 function openSection(event, sectionName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("sectionName");
