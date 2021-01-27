@@ -39,3 +39,30 @@ function activateEleven() {
 function activateTwelve() {
     document.getElementById('exampleTwelve').classList.add('exampleTwelveAnimation');
 }
+function activateTiming() {
+    document.getElementById('exampleTimingLinear').classList.add('exampleTimingLinearAnimation');
+    document.getElementById('exampleTimingEase').classList.add('exampleTimingEaseAnimation');
+    document.getElementById('exampleTimingEaseIn').classList.add('exampleTimingEaseInAnimation');
+    document.getElementById('exampleTimingEaseOut').classList.add('exampleTimingEaseOutAnimation');
+    document.getElementById('exampleTimingEaseInOut').classList.add('exampleTimingEaseInOutAnimation');
+    document.getElementById('exampleTimingbezier').classList.add('exampleTimingbezierAnimation');
+}
+function activateFill() {
+    document.getElementById('exampleFillNone').classList.add('exampleFillNoneAnimation');
+    document.getElementById('exampleFillForwards').classList.add('exampleFillForwardsAnimation');
+    document.getElementById('exampleFillBackwards').classList.add('exampleFillBackwardsAnimation');
+    document.getElementById('exampleFillBoth').classList.add('exampleFillBothAnimation');
+}
+function openSection(event, sectionName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("sectionName");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" highlightTab", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    event.currentTarget.className += " highlightTab";
+  }

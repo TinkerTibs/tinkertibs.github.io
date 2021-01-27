@@ -21,10 +21,18 @@
             <li><a href="fireworks.html">Fireworks</a></li>
         </ul>
     </nav>
+    <div class="secondNavBar">
+        <button class="secondNav tablink highlightTab" onclick="openSection(event, 'sectionNameDelays')">Delays</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameRepeat')">Repeat</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameDirection')">Direction</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameTiming')">Timing</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameFill')">Fill</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameShorthand')">Shorthand</button>
+    </div>
     <main>
         <h2>CSS Keyframe Animations</h2>
         <hr>
-        <section>
+        <section id="sectionNameDelays" class="sectionName">
             <h3>Delays</h3>
             <p>You can add a delay to the start of the animation. This is done by adding the property name "animation-delay" to the element's selector. Negative values can be entered and will cause the animation to start as if it had already been active for x number of seconds.</p>
             <h4>Example</h4>
@@ -37,7 +45,7 @@
                 <br>&emsp;0% {background-color: #153e5c;}
                 <br>&emsp;100% {background-color: #c1cdd5;}
                 <br>}</p>
-                <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5) with a 2 seond delay. Click the box below to watch this happen.</p>
+                <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5) with a 2 second delay. Click the box below to watch this happen.</p>
                 <button type="button" id="exampleFive" onclick="activateFive()"></button>
             <h4>Example</h4>
             <p class="codingText">div {
@@ -52,7 +60,7 @@
                 <p>In this example we are again changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5) but this time with a -2 seond delay. Click the box below to watch this happen.</p>
                 <button type="button" id="exampleSix" onclick="activateSix()"></button>
         </section>
-        <section>
+        <section id="sectionNameRepeat" class="sectionName" style="display: none;">
             <h3>Repeat</h3>
             <p>You can repeat the animation's cycle. This is done by adding the property name "animation-iteration-count" to the element's selector. To have the animination run an infinate number of times declare the value as "infinite."</p>
             <h4>Example</h4>
@@ -80,7 +88,7 @@
                 <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5), and cycling through that sequence forever. Click the box below to watch this happen.</p>
                 <button type="button" id="exampleEight" onclick="activateEight()"></button>
         </section>
-        <section>
+        <section id="sectionNameDirection" class="sectionName" style="display: none;">
             <h3>Direction</h3>
             <p>By default, the animation will play through once from beginning to end. However, we can alter this by adding the property name "animation-direction" to the element's selector. The animation-direction property can have the following values:</p>
             <ul>
@@ -123,6 +131,7 @@
             <p class="codingText">div {
                 <br>&emsp;animation-name: example;
                 <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-iteration-count: 2;  
                 <br>&emsp;animation-direction: alternate;                 
                 <br>}
                 <br>@keyframes example {
@@ -138,6 +147,7 @@
             <p class="codingText">div {
                 <br>&emsp;animation-name: example;
                 <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-iteration-count: 2;  
                 <br>&emsp;animation-direction: alternate-reverse;               
                 <br>}
                 <br>@keyframes example {
@@ -149,6 +159,81 @@
                 <br>}</p>
                 <p>In this example we are changing the background color from a darker blue in the upper left corner (at 0%) to white in the upper right corner (at 25%) to a lighter blue in the bottom right corner (at 50%) to black in the bottom left corner (at 75%) and then back to the dark blue we started with in the upper left corner (at 100%), and cycling through the sequence in alternate-reverse. Click the box below to watch this happen.</p>
                 <button type="button" id="exampleTwelve" onclick="activateTwelve()"></button>
+        </section>
+        <section id="sectionNameTiming" class="sectionName" style="display: none;">
+            <h3>Timing</h3>
+            <p>You can specify the timing of the animation by using the animation-timing-function property. By default, the animation will follow the ease value, meaning that it will start and end the animation slowly, and have a fast middle. The animation-timing-function property can have the following values:</p>
+            <ul>
+                <li><b>Ease:</b> Animation will start and end slowly, and have a fast middle. This is the default.</li>
+                <li><b>Linear:</b> Animation will have the same speed from start to end.</li>
+                <li><b>Ease-in:</b> Animation will start slowly.</li>
+                <li><b>Ease-out:</b> Animation will end slowly.</li>
+                <li><b>Ease-in-out:</b> Animation will start and end slowly.</li>
+                <li><b>Cubic-bezier<i>(P0, P1, P2, P3)</i>:</b> Allows you to define your own values in a cubic-bezier function.</li>
+            </ul>
+            <p>The Cubic-bezier curve is defined by four points. These points are generally referred in one of the following ways. First as P0, P1, P2, and P3 as (P0, P1, P2, P3); or x1, y1, x2, and y2 as (x1, y1, x2, y2). All four points are required in the code as numeric values. Additionally, P0/x1 and P2/x2 must be a number from 0 to 1.</p>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 10s;
+                <br>&emsp;animation-iteration-count: 3;  
+                <br>&emsp;animation-timing-function: <i>value</i>;
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {left:0px;}
+                <br>&emsp;100% {left:750px;}
+                <br>}</p>
+                <p>In this example we are moving the boxes from one side of the screen to the other using each of the animation-timing-function properties available. Our cubic-bezier will have the following values: (0, 1, 0.5, 0.2). This is repeated three times. Click any of the boxes below to watch this happen.</p>                
+                <button type="button" id="exampleTimingEase" onclick="activateTiming()">Ease</button>
+                <br><button type="button" id="exampleTimingLinear" onclick="activateTiming()">Linear</button>
+                <br><button type="button" id="exampleTimingEaseIn" onclick="activateTiming()">Ease-in</button>
+                <br><button type="button" id="exampleTimingEaseOut" onclick="activateTiming()">Ease-out</button>
+                <br><button type="button" id="exampleTimingEaseInOut" onclick="activateTiming()">Ease-in-out</button>
+                <br><button type="button" id="exampleTimingbezier" onclick="activateTiming()">Cubic-bezier</button>
+        </section>
+        <section id="sectionNameFill" class="sectionName" style="display: none;">
+            <h3>Fill</h3>
+            <p>Generally, the animations will not affect the elements properties before or after the animation is played. You can override this using the animation-fill-mode property. By default, the animation will follow the none value, meaning that the animation will only affect the element during the animation play. Please keep in mind that adding an animation-direction value may alter the effect of the animation-fill-mode. The animation-fill-mode property can have the following values:</p>
+            <ul>
+                <li><b>None:</b> The element will not keep the styles from the animation. This is the default.</li>
+                <li><b>Forward:</b> The element will keep the values set by the last keyframe after the animation is played.</li>
+                <li><b>Backwards:</b> The element will have the values set by the first keyframe, before the animation is played.</li>
+                <li><b>Both:</b> The element will have the values set by the first keyframe, before the animation is played, and keep the values set by the last keyframe after the animation is played.</li>
+            </ul>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;background-color: #153e5c;
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-delay: 2s;
+                <br>&emsp;animation-fill-mode: <i>value</i>;
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color: #000000; left:0px;}
+                <br>&emsp;100% {background-color: #698497; left:750px;}
+                <br>}</p>
+                <p>In this example we are moving the boxes from one side of the screen to the other and changing their color from black to light blue, using each of the animation-fill-mode properties available. So that the animation-fill-mode options can be compared accurately a 2 second animation delay has also been added. Click any of the boxes below to watch this happen.</p>                
+                <button type="button" id="exampleFillNone" onclick="activateFill()">None</button>
+                <br><button type="button" id="exampleFillForwards" onclick="activateFill()">Forwards</button>
+                <br><button type="button" id="exampleFillBackwards" onclick="activateFill()">Backwards</button>
+                <br><button type="button" id="exampleFillBoth" onclick="activateFill()">Both</button>
+        </section>
+        <section id="sectionNameShorthand" class="sectionName" style="display: none;">
+            <h3>Shorthand</h3>
+            <p>To illustrate the use of the shorthand <i>animation</i> property the following two examples create the same animation effect.</p>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-timing-function: linear;
+                <br>&emsp;animation-delay: 2s;
+                <br>&emsp;animation-iteration-count: infinite;
+                <br>&emsp;animation-fill-mode: alternate;
+                <br>}
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation: example 4s linear 2s infinite alternate;
+                <br>}
         </section>
     </main>
     <footer>

@@ -2,7 +2,7 @@
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
-header, footer, main, nav {
+header, footer, main, nav, div {
 	max-width: 60em;
 	margin: 0 auto;
 }
@@ -30,6 +30,9 @@ section {
 }
 button {
 	margin-bottom: 20px;
+}
+button:focus {
+    outline: none;
 }
 img {
 	max-width: 100%;
@@ -102,217 +105,173 @@ nav a:hover {
 .active a:hover {
 	color: #000000;
 }
-/* example one of animation */
-#exampleOne {
+/* second nav area */
+.secondNavBar {
+	display: flex;
+	border-top: 2px solid #153e5c;
+}
+.secondNavBar button {
+	background-color: #698497;	
+	padding: 8px;
+	border: none;
+	flex: 1 1 auto; /* nav buttons span full width*/
+}
+.secondNavBar button:hover {
+	color: #ffffff;
+}
+.secondNavBar button .highlightTab {
+	background-color: #c1cdd5;	
+}
+.highlightTab:hover {
+	color: #000000;	
+}
+/* css coding for animation examples */
+/* Original Id's */
+#exampleOne, #exampleTwo, #exampleFour, #exampleFive, #exampleSix, #exampleSeven, #exampleEight {
 	height: 50px;
 	width: 200px;
 	background-color: #153e5c;
 	border: none;
 }
+#exampleThree, #exampleNine, #exampleTen, #exampleEleven, #exampleTwelve {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 130px;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+#exampleTimingLinear, #exampleTimingEase, #exampleTimingEaseIn, #exampleTimingEaseOut, #exampleTimingEaseInOut, #exampleTimingbezier, #exampleFillNone, #exampleFillForwards, #exampleFillBackwards, #exampleFillBoth {
+	height: 50px;
+	width: 200px;
+	color: #ffffff;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+/* added classes */
 .exampleOneAnimation {
-	animation-name: exampleOne;
+	animation-name: backgroundColorOne;
 	animation-duration: 4s;
-}
-@keyframes exampleOne {
-	0% {background-color: #153e5c;}
-	100% {background-color: #c1cdd5;}
-}
-/* example two of animation */
-#exampleTwo {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
 }
 .exampleTwoAnimation {
-	animation-name: exampleTwo;
+	animation-name: backgroundColorFour;
 	animation-duration: 4s;
-}
-@keyframes exampleTwo {
-	0% {background-color: #153e5c;}
-	25% {background-color: #ffffff;}
-	50% {background-color: #698497;}
-	75% {background-color: #000000;}
-	100% {background-color: #153e5c;}
-}
-/* example three of animation */
-#exampleThree {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
 }
 .exampleThreeAnimation {
-	animation-name: exampleThree;
+	animation-name: moveInSquare;
 	animation-duration: 4s;
 }
-@keyframes exampleThree {
-	0%   {background-color:#153e5c; height: 50px; width: 200px;}
-	100% {background-color:#c1cdd5; height: 200px; width: 50px;}
-}
-/* example four of animation */
-#exampleFour {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
-}
 .exampleFourAnimation {
-	animation-name: exampleFour;
+	animation-name: backgroundColorFour;
 	animation-duration: 10s;
 }
-@keyframes exampleFour {
-	0% {background-color: #153e5c;}
-	25% {background-color: #ffffff;}
-	50% {background-color: #698497;}
-	75% {background-color: #000000;}
-	100% {background-color: #153e5c;}
-}
-/* example five of animation */
-#exampleFive {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
-}
 .exampleFiveAnimation {
-	animation-name: exampleFive;
+	animation-name: backgroundColorOne;
 	animation-duration: 4s;
 	animation-delay: 2s;
 }
-@keyframes exampleFive {
-	0% {background-color: #153e5c;}
-	100% {background-color: #c1cdd5;}
-}
-/* example six of animation */
-#exampleSix {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
-}
 .exampleSixAnimation {
-	animation-name: exampleSix;
+	animation-name: backgroundColorOne;
 	animation-duration: 4s;
 	animation-delay: -2s;
 }
-@keyframes exampleSix {
-	0% {background-color: #153e5c;}
-	100% {background-color: #c1cdd5;}
-}
-/* example seven of animation */
-#exampleSeven {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
-}
 .exampleSevenAnimation {
-	animation-name: exampleSeven;
+	animation-name: backgroundColorOne;
 	animation-duration: 4s;
 	animation-iteration-count: 3;
 }
-@keyframes exampleSeven {
-	0% {background-color: #153e5c;}
-	100% {background-color: #c1cdd5;}
-}
-/* example eight of animation */
-#exampleEight {
-	height: 50px;
-	width: 200px;
-	background-color: #153e5c;
-	border: none;
-}
 .exampleEightAnimation {
-	animation-name: exampleEight;
+	animation-name: backgroundColorOne;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
-@keyframes exampleEight {
-	0% {background-color: #153e5c;}
-	100% {background-color: #c1cdd5;}
-}
-/* example nine of animation */
-#exampleNine {
-	height: 50px;
-	width: 50px;
-	margin-bottom: 130px;
-	background-color: #153e5c;
-	border: none;
-	position: relative;
-}
 .exampleNineAnimation {
-	animation-name: exampleNine;
+	animation-name: moveInSquare;
 	animation-duration: 4s;
 	animation-direction: normal;
 }
-@keyframes exampleNine {
-	0%   {background-color:#153e5c; left:0px; top:0px;}
-	25%  {background-color:#ffffff; left:100px; top:0px;}
-	50%  {background-color:#698497; left:100px; top:100px;}
-	75%  {background-color:#000000; left:0px; top:100px;}
-	100% {background-color:#153e5c; left:0px; top:0px;}
-}
-/* example ten of animation */
-#exampleTen {
-	height: 50px;
-	width: 50px;
-	margin-bottom: 130px;
-	background-color: #153e5c;
-	border: none;
-	position: relative;
-}
 .exampleTenAnimation {
-	animation-name: exampleTen;
+	animation-name: moveInSquare;
 	animation-duration: 4s;
 	animation-direction: reverse;
 }
-@keyframes exampleTen {
-	0%   {background-color:#153e5c; left:0px; top:0px;}
-	25%  {background-color:#ffffff; left:100px; top:0px;}
-	50%  {background-color:#698497; left:100px; top:100px;}
-	75%  {background-color:#000000; left:0px; top:100px;}
-	100% {background-color:#153e5c; left:0px; top:0px;}
-}
-/* example eleven of animation */
-#exampleEleven {
-	height: 50px;
-	width: 50px;
-	margin-bottom: 130px;
-	background-color: #153e5c;
-	border: none;
-	position: relative;
-}
 .exampleElevenAnimation {
-	animation-name: exampleEleven;
+	animation-name: moveInSquare;
 	animation-duration: 4s;
+	animation-iteration-count: 2;
 	animation-direction: alternate;
 }
-@keyframes exampleEleven {
-	0%   {background-color:#153e5c; left:0px; top:0px;}
-	25%  {background-color:#ffffff; left:100px; top:0px;}
-	50%  {background-color:#698497; left:100px; top:100px;}
-	75%  {background-color:#000000; left:0px; top:100px;}
-	100% {background-color:#153e5c; left:0px; top:0px;}
-}
-/* example twelve of animation */
-#exampleTwelve {
-	height: 50px;
-	width: 50px;
-	margin-bottom: 130px;
-	background-color: #153e5c;
-	border: none;
-	position: relative;
-}
 .exampleTwelveAnimation {
-	animation-name: exampleTwelve;
+	animation-name: moveInSquare;
 	animation-duration: 4s;
+	animation-iteration-count: 2;
 	animation-direction: alternate-reverse;
 }
-@keyframes exampleTwelve {
+.exampleTimingLinearAnimation, .exampleTimingEaseAnimation, .exampleTimingEaseInAnimation, .exampleTimingEaseOutAnimation, .exampleTimingEaseInOutAnimation, .exampleTimingbezierAnimation {
+	animation-name: moveToRight;
+	animation-duration: 10s;
+	animation-iteration-count: 3;	
+}
+.exampleTimingLinearAnimation {
+	animation-timing-function: linear;
+}
+.exampleTimingEaseAnimation {
+	animation-timing-function: ease;
+}
+.exampleTimingEaseInAnimation {
+	animation-timing-function: ease-in;
+}
+.exampleTimingEaseOutAnimation {
+	animation-timing-function: ease-out;
+}
+.exampleTimingEaseInOutAnimation {
+	animation-timing-function: ease-in-out;
+}
+.exampleTimingbezierAnimation {
+	animation-timing-function: cubic-bezier(0, 1, 0.5, 0.2);
+}
+.exampleFillNoneAnimation, .exampleFillForwardsAnimation, .exampleFillBackwardsAnimation, .exampleFillBothAnimation {
+	animation-name: moveToRightWithColor;
+	animation-delay: 2s;
+	animation-duration: 4s;
+}
+.exampleFillNoneAnimation {
+	animation-fill-mode: none;
+}
+.exampleFillForwardsAnimation {
+	animation-fill-mode: forwards;
+}
+.exampleFillBackwardsAnimation {
+	animation-fill-mode: backwards;
+}
+.exampleFillBothAnimation {
+	animation-fill-mode: both;
+}
+/* keyframes */
+@keyframes moveToRightWithColor {
+	0%   {background-color: #000000; left:0px;}
+	100% {background-color: #698497; left:750px;}
+}
+@keyframes moveToRight {
+	0%   {left:0px;}
+	100% {left:750px;}
+}
+@keyframes moveInSquare {
 	0%   {background-color:#153e5c; left:0px; top:0px;}
 	25%  {background-color:#ffffff; left:100px; top:0px;}
 	50%  {background-color:#698497; left:100px; top:100px;}
 	75%  {background-color:#000000; left:0px; top:100px;}
 	100% {background-color:#153e5c; left:0px; top:0px;}
+}
+@keyframes backgroundColorOne {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+@keyframes backgroundColorFour {
+	0% {background-color: #153e5c;}
+	25% {background-color: #ffffff;}
+	50% {background-color: #698497;}
+	75% {background-color: #000000;}
+	100% {background-color: #153e5c;}
 }
