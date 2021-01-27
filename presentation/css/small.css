@@ -96,14 +96,11 @@ nav ul li a {
 	color: #000000;
 }
 nav a:hover {
-	color: #ffffff;
+	text-decoration: underline;
 }
 .active {
 	background-color: #c1cdd5;
 	height: 23px;
-}
-.active a:hover {
-	color: #000000;
 }
 /* second nav area */
 .secondNavBar {
@@ -111,19 +108,15 @@ nav a:hover {
 	border-top: 2px solid #153e5c;
 }
 .secondNavBar button {
-	background-color: #698497;	
 	padding: 8px;
 	border: none;
 	flex: 1 1 auto; /* nav buttons span full width*/
 }
 .secondNavBar button:hover {
-	color: #ffffff;
+	text-decoration: underline;
 }
 .highlightTab {
 	background-color: #c1cdd5;	
-}
-.highlightTab:hover {
-	color: #000000;	
 }
 /* css coding for animation examples */
 /* Original Id's */
