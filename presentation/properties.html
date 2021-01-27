@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment page for the CSS Keyframe Animations student presentation for week 6 in WDD 230.">
+    <title>WDD 230 &bull; Week 6 &bull; CSS Keyframe Animations</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 230 &bull; Week 6</h1>
+    </header>  
+    <nav>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="basics.html">Basics</a></li>
+            <li class="active"><a href="properties.html">Properties</a></li>
+            <li><a href="fireworks.html">Fireworks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>CSS Keyframe Animations</h2>
+        <hr>
+        <section>
+            <h3>Delays</h3>
+            <p>You can add a delay to the start of the animation. This is done by adding the property name "animation-delay" to the element's selector. Negative values can be entered and will cause the animation to start as if it had already been active for x number of seconds.</p>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-delay: 2s;               
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color: #153e5c;}
+                <br>&emsp;100% {background-color: #c1cdd5;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5) with a 2 seond delay. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleFive" onclick="activateFive()"></button>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-delay: -2s;               
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color: #153e5c;}
+                <br>&emsp;100% {background-color: #c1cdd5;}
+                <br>}</p>
+                <p>In this example we are again changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5) but this time with a -2 seond delay. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleSix" onclick="activateSix()"></button>
+        </section>
+        <section>
+            <h3>Repeat</h3>
+            <p>You can repeat the animation's cycle. This is done by adding the property name "animation-iteration-count" to the element's selector. To have the animination run an infinate number of times declare the value as "infinite."</p>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-iteration-count: 3;               
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color: #153e5c;}
+                <br>&emsp;100% {background-color: #c1cdd5;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5), and cycling through that sequence three times. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleSeven" onclick="activateSeven()"></button>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-iteration-count: infinite;               
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color: #153e5c;}
+                <br>&emsp;100% {background-color: #c1cdd5;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue (#153e5c) to a lighter blue (#c1cdd5), and cycling through that sequence forever. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleEight" onclick="activateEight()"></button>
+        </section>
+        <section>
+            <h3>Direction</h3>
+            <p>By default, the animation will play through once from beginning to end. However, we can alter this by adding the property name "animation-direction" to the element's selector. The animation-direction property can have the following values:</p>
+            <ul>
+                <li><b>Normal:</b> The animation plays through as normal, from beginning to end. This is the default.</li>
+                <li><b>Reverse:</b> The animation plays through in reverse or backwards, from end to beginning.</li>
+                <li><b>Alternate:</b> The animation plays through from beginning to end, then from end to beginning.</li>
+                <li><b>Alternate-reverse:</b> The animation plays through from end to beginning, then from beginning to end.</li>
+            </ul>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-direction: normal;             
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color:#153e5c; left:0px; top:0px;}
+                <br>&emsp;25% {background-color:#ffffff; left:100px; top:0px;}
+                <br>&emsp;50% {background-color:#698497; left:100px; top:100px;}
+                <br>&emsp;75% {background-color:#000000; left:0px; top:100px;}
+                <br>&emsp;100% {background-color:#153e5c; left:0px; top:0px;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue in the upper left corner (at 0%) to white in the upper right corner (at 25%) to a lighter blue in the bottom right corner (at 50%) to black in the bottom left corner (at 75%) and then back to the dark blue we started with in the upper left corner (at 100%), and cycling through the sequence in normal. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleNine" onclick="activateNine()"></button>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-direction: reverse;             
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color:#153e5c; left:0px; top:0px;}
+                <br>&emsp;25% {background-color:#ffffff; left:100px; top:0px;}
+                <br>&emsp;50% {background-color:#698497; left:100px; top:100px;}
+                <br>&emsp;75% {background-color:#000000; left:0px; top:100px;}
+                <br>&emsp;100% {background-color:#153e5c; left:0px; top:0px;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue in the upper left corner (at 0%) to white in the upper right corner (at 25%) to a lighter blue in the bottom right corner (at 50%) to black in the bottom left corner (at 75%) and then back to the dark blue we started with in the upper left corner (at 100%), and cycling through the sequence in reverse. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleTen" onclick="activateTen()"></button>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-direction: alternate;                 
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color:#153e5c; left:0px; top:0px;}
+                <br>&emsp;25% {background-color:#ffffff; left:100px; top:0px;}
+                <br>&emsp;50% {background-color:#698497; left:100px; top:100px;}
+                <br>&emsp;75% {background-color:#000000; left:0px; top:100px;}
+                <br>&emsp;100% {background-color:#153e5c; left:0px; top:0px;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue in the upper left corner (at 0%) to white in the upper right corner (at 25%) to a lighter blue in the bottom right corner (at 50%) to black in the bottom left corner (at 75%) and then back to the dark blue we started with in the upper left corner (at 100%), and cycling through the sequence in alternate. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleEleven" onclick="activateEleven()"></button>
+            <h4>Example</h4>
+            <p class="codingText">div {
+                <br>&emsp;animation-name: example;
+                <br>&emsp;animation-duration: 4s;
+                <br>&emsp;animation-direction: alternate-reverse;               
+                <br>}
+                <br>@keyframes example {
+                <br>&emsp;0% {background-color:#153e5c; left:0px; top:0px;}
+                <br>&emsp;25% {background-color:#ffffff; left:100px; top:0px;}
+                <br>&emsp;50% {background-color:#698497; left:100px; top:100px;}
+                <br>&emsp;75% {background-color:#000000; left:0px; top:100px;}
+                <br>&emsp;100% {background-color:#153e5c; left:0px; top:0px;}
+                <br>}</p>
+                <p>In this example we are changing the background color from a darker blue in the upper left corner (at 0%) to white in the upper right corner (at 25%) to a lighter blue in the bottom right corner (at 50%) to black in the bottom left corner (at 75%) and then back to the dark blue we started with in the upper left corner (at 100%), and cycling through the sequence in alternate-reverse. Click the box below to watch this happen.</p>
+                <button type="button" id="exampleTwelve" onclick="activateTwelve()"></button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="classYear"></span> &bull; Christina Thibodeau &bull; California &bull; <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br><span id="output"></span></p>
+        <p><a href="../">Assignment Portal</a></p>
+    </footer>
+    <script src="js/presentation.js"></script>
+</body>
+</html>

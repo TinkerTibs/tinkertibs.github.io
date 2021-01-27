@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto&display=swap');
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
@@ -22,6 +22,15 @@ main {
 section p, section img, section video {
 	padding-left: 15px;
 } 
+section .codingText, section button, section h4 {
+	margin-left: 15px;
+} 
+section {
+	margin-bottom: 50px;
+}
+button {
+	margin-bottom: 20px;
+}
 img {
 	max-width: 100%;
 	height:	auto;
@@ -39,8 +48,19 @@ h3 {
 	font-size: 16px;
 }
 h4 {
-	text-decoration: underline;
+	color: #ffffff;
+	background-color: #153e5c;	
+	margin: 0;
+	padding: 10px 10px 10px 20px;
 	font-size: 16px;
+}
+.codingText {
+	font-family: 'Cutive Mono', monospace, Arial, sans-serif;
+	font-weight: bold;
+	background-color: #c1cdd5;
+	padding: 15px;
+	border-left: 5px solid #698497;
+	margin-top: 0;
 }
 a {
 	text-decoration: none;
@@ -82,10 +102,217 @@ nav a:hover {
 .active a:hover {
 	color: #000000;
 }
-#exampleOne, #exampleTwo, #exampleThree {
-	padding: 15px;
-	width: 100px;
-    background: #153e5c;
-    color: #ffffff;
-    font-weight: bold;
+/* example one of animation */
+#exampleOne {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleOneAnimation {
+	animation-name: exampleOne;
+	animation-duration: 4s;
+}
+@keyframes exampleOne {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+/* example two of animation */
+#exampleTwo {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleTwoAnimation {
+	animation-name: exampleTwo;
+	animation-duration: 4s;
+}
+@keyframes exampleTwo {
+	0% {background-color: #153e5c;}
+	25% {background-color: #ffffff;}
+	50% {background-color: #698497;}
+	75% {background-color: #000000;}
+	100% {background-color: #153e5c;}
+}
+/* example three of animation */
+#exampleThree {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleThreeAnimation {
+	animation-name: exampleThree;
+	animation-duration: 4s;
+}
+@keyframes exampleThree {
+	0%   {background-color:#153e5c; height: 50px; width: 200px;}
+	100% {background-color:#c1cdd5; height: 200px; width: 50px;}
+}
+/* example four of animation */
+#exampleFour {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleFourAnimation {
+	animation-name: exampleFour;
+	animation-duration: 10s;
+}
+@keyframes exampleFour {
+	0% {background-color: #153e5c;}
+	25% {background-color: #ffffff;}
+	50% {background-color: #698497;}
+	75% {background-color: #000000;}
+	100% {background-color: #153e5c;}
+}
+/* example five of animation */
+#exampleFive {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleFiveAnimation {
+	animation-name: exampleFive;
+	animation-duration: 4s;
+	animation-delay: 2s;
+}
+@keyframes exampleFive {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+/* example six of animation */
+#exampleSix {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleSixAnimation {
+	animation-name: exampleSix;
+	animation-duration: 4s;
+	animation-delay: -2s;
+}
+@keyframes exampleSix {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+/* example seven of animation */
+#exampleSeven {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleSevenAnimation {
+	animation-name: exampleSeven;
+	animation-duration: 4s;
+	animation-iteration-count: 3;
+}
+@keyframes exampleSeven {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+/* example eight of animation */
+#exampleEight {
+	height: 50px;
+	width: 200px;
+	background-color: #153e5c;
+	border: none;
+}
+.exampleEightAnimation {
+	animation-name: exampleEight;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes exampleEight {
+	0% {background-color: #153e5c;}
+	100% {background-color: #c1cdd5;}
+}
+/* example nine of animation */
+#exampleNine {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 130px;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+.exampleNineAnimation {
+	animation-name: exampleNine;
+	animation-duration: 4s;
+	animation-direction: normal;
+}
+@keyframes exampleNine {
+	0%   {background-color:#153e5c; left:0px; top:0px;}
+	25%  {background-color:#ffffff; left:100px; top:0px;}
+	50%  {background-color:#698497; left:100px; top:100px;}
+	75%  {background-color:#000000; left:0px; top:100px;}
+	100% {background-color:#153e5c; left:0px; top:0px;}
+}
+/* example ten of animation */
+#exampleTen {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 130px;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+.exampleTenAnimation {
+	animation-name: exampleTen;
+	animation-duration: 4s;
+	animation-direction: reverse;
+}
+@keyframes exampleTen {
+	0%   {background-color:#153e5c; left:0px; top:0px;}
+	25%  {background-color:#ffffff; left:100px; top:0px;}
+	50%  {background-color:#698497; left:100px; top:100px;}
+	75%  {background-color:#000000; left:0px; top:100px;}
+	100% {background-color:#153e5c; left:0px; top:0px;}
+}
+/* example eleven of animation */
+#exampleEleven {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 130px;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+.exampleElevenAnimation {
+	animation-name: exampleEleven;
+	animation-duration: 4s;
+	animation-direction: alternate;
+}
+@keyframes exampleEleven {
+	0%   {background-color:#153e5c; left:0px; top:0px;}
+	25%  {background-color:#ffffff; left:100px; top:0px;}
+	50%  {background-color:#698497; left:100px; top:100px;}
+	75%  {background-color:#000000; left:0px; top:100px;}
+	100% {background-color:#153e5c; left:0px; top:0px;}
+}
+/* example twelve of animation */
+#exampleTwelve {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 130px;
+	background-color: #153e5c;
+	border: none;
+	position: relative;
+}
+.exampleTwelveAnimation {
+	animation-name: exampleTwelve;
+	animation-duration: 4s;
+	animation-direction: alternate-reverse;
+}
+@keyframes exampleTwelve {
+	0%   {background-color:#153e5c; left:0px; top:0px;}
+	25%  {background-color:#ffffff; left:100px; top:0px;}
+	50%  {background-color:#698497; left:100px; top:100px;}
+	75%  {background-color:#000000; left:0px; top:100px;}
+	100% {background-color:#153e5c; left:0px; top:0px;}
 }
