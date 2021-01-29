@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
@@ -33,7 +33,6 @@ header img {
 	font-size: 12px;
 }
 /*header navigation */
-
 .navigation {
 	list-style: none;
 	background-color: #f2be54;
@@ -45,8 +44,6 @@ header img {
 	display: block;
 }
 .navigation li {
-	padding-top: 15px;
-	padding-bottom: 15px;
 	display: none;
 }
 .navigation a {
@@ -54,20 +51,42 @@ header img {
 	font-size: 16px;
 	color: #000000;
 	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .responsive li {
 	display: block;
 }
 nav a:hover {
-	color: #ffffff;
+	background-color: #cacfd4;
 }
 .active {
 	text-decoration: underline;
 }
+/* temp main divs */
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+main div {
+	border: dotted 1px #153e5c;
+	background-color: #cacfd4;
+	margin: 15px;
+	padding: 15px;
+}
+/* footer */
 footer {
 	background-color: #f2be54;
-	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
+footer p {
+	font-size: 14px;
+}
+/* typography */
 h1 {
 	font-size: 20px;
 	color: #153e5c;
@@ -83,10 +102,3 @@ h3 {
 p {
 	font-size: 12px;
 }
-
-
-
-
-
-
-
