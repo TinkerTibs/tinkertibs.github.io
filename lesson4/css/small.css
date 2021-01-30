@@ -2,8 +2,11 @@
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
-header, footer, main, nav {
+footer, main {
 	max-width: 80em;
+	margin: 0 auto;
+}
+header, nav {
 	margin: 0 auto;
 }
 /* heading */
