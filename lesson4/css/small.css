@@ -36,10 +36,14 @@ header img {
 	font-size: 12px;
 }
 /*header navigation */
+nav {
+	background-color: #f2be54;
+}
 .navigation {
+	max-width: 80em;
 	list-style: none;
 	background-color: #f2be54;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 }
@@ -51,7 +55,7 @@ header img {
 }
 .navigation a {
 	display: block;
-	font-size: 16px;
+	font-size: 16px;	
 	color: #000000;
 	text-decoration: none;
 	padding-top: 15px;
