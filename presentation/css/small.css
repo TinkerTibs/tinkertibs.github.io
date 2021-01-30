@@ -9,15 +9,11 @@ header, footer, main, nav, div {
 header, footer {
 	background-color: #153e5c;
 	color: #ffffff;
-	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
-}
-main {
-	padding: 15px;
 }
 section p, section img, section video {
 	padding-left: 15px;
@@ -75,37 +71,38 @@ footer p a:hover {
 	color:  #87aeb4;
 }
 /* navigation area - top */
-nav {
-	background-color: #698497;	
-	text-align: center;
-}
 nav ul {
+	background-color: #698497;	
+	list-style: none;
+	text-align: center;
 	display: flex;
 	margin: 0;
 	padding: 0;
 	justify-content: center;
-	flex-direction: column;
+	flex-flow: row wrap;
 }
 nav ul li {
-	padding: 15px;
 	flex: 1 1 auto; /* nav buttons span full width*/
 }
-nav ul li a {
+nav a {
 	padding: 15px;
+	display: block;
 	font-size: 16px;
 	color: #000000;
 }
 nav a:hover {
-	text-decoration: underline;
+	background-color: #153e5c;	
+	color: #ffffff;
 }
 .active {
 	background-color: #c1cdd5;
-	height: 23px;
+	border-left: 4px solid #153e5c;
+	border-right: 4px solid #153e5c;
 }
 /* second nav area */
 .secondNavBar {
 	display: flex;
-	border-top: 2px solid #153e5c;
+	border-top: 3px solid #153e5c;
 }
 .secondNavBar button {
 	padding: 8px;
@@ -113,7 +110,8 @@ nav a:hover {
 	flex: 1 1 auto; /* nav buttons span full width*/
 }
 .secondNavBar button:hover {
-	text-decoration: underline;
+	background-color: #153e5c;	
+	color: #ffffff;
 }
 .highlightTab {
 	background-color: #c1cdd5;	
