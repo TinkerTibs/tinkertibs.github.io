@@ -211,9 +211,7 @@ footer p {
 }
 #contactTextArea p {
 	margin: 0;
-}
-#contactTextArea div {
-	margin-top: 15px;
+	padding-bottom: 15px;
 }
 #contactTextArea h3 {
 	grid-column: 1 / 3;	
