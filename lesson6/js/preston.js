@@ -19,4 +19,3 @@ document.getElementById("output").innerHTML = days[currentDate.getDay()] + ", " 
 if (currentDate.getDay() == 5) {
     document.getElementById("prestonPancakes").style.display = "block";
 }
-
