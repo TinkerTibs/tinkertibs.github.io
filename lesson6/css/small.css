@@ -178,11 +178,14 @@ footer p {
 	padding: 15px;
 	overflow: auto;
 }
+.articleImg {
+	margin: 0;
+	width: 100%;
+}
 #articleArea h3 {
 	margin-top: 10px;
 }
 #articleArea img {
-	max-width: 532px;
 	width: 100%;
 	height:	auto;
 	display: block;

@@ -37,11 +37,14 @@
     <main>
         <h2>Preston Idaho</h2>
         <div id="heroArea">
-            <img src="images/heropic.jpg" alt="image of the town of preston Idaho">
+            <img src="images/heropic.jpg" alt="image of the town of preston Idaho" sizes="100vw"
+            srcset="images/heropicsmall.jpg 400w,
+                    images/heropicmed.jpg 800w,
+                    images/heropic.jpg 1280w">
             <section id="weatherSummary">
                 <h3>Weather Summary</h3>
                 <label>Currently:</label> <p>Sunny</p>
-                <label>High:</label> <p><span id="temperature">30</span>&deg;F</p>
+                <label>Temperature:</label> <p><span id="temperature">30</span>&deg;F</p>
                 <label>Wind Chill:</label><p><span id="windChill"></span></p>
                 <label>Humidity:</label> <p>69%</p>
                 <label>Wind Speed:</label> <p><span id="windSpeed">12</span> mph</p>
@@ -79,7 +82,9 @@
         </div>
         <div id="articleArea">
             <h3>Article Title</h3>
-            <img src="images/articlephoto.jpg" alt="picture our shy subject of article!">
+            <figure class="articleImg">
+                <img src="images/articlephoto640.jpg" alt="picture our shy subject of article!">
+            </figure>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
         </div>
@@ -92,9 +97,9 @@
                 <p>30 N 1st E<br>Preston, ID 83263</p>
                 <p>☎ 999.999.9999<br>✉ contact@stw.com</p>
                 <div>
-                    <a href="https://facebook.com/"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a>
-                    <a href="https://pintrest.com/"><img class="socialIcon" src="images/pintrest.png" alt="pintrest icon">&ensp;</a>
-                    <a href="https://twitter.com/"><img class="socialIcon" src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://facebook.com/" target="_blank"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a>
+                    <a href="https://pintrest.com/" target="_blank"><img class="socialIcon" src="images/pintrest.png" alt="pintrest icon">&ensp;</a>
+                    <a href="https://twitter.com/" target="_blank"><img class="socialIcon" src="images/twitter.png" alt="twitter icon"></a>
                 </div>
             </section>
         </div>   

@@ -1,9 +1,9 @@
 //INPUT 
-let temperature = parseFloat(document.getElementById("temperature"));
-let windspeed = parseFloat(document.getElementById("windSpeed"));
+let temperature = parseFloat(document.getElementById("temperature").textContent);
+let windspeed = parseFloat(document.getElementById("windSpeed").textContent);
 //PROCESSING
 let windchill = "N/A";
-if (temperature < 50 && windspeed > 3) {
+if (temperature <= 50 && windspeed > 3) {
     windchill = windChill(temperature, windspeed) + "&deg;F";
 }
 //OUTPUT
