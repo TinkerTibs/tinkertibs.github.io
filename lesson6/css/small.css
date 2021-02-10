@@ -215,12 +215,14 @@ footer p {
 	margin: 0;
 	padding-bottom: 15px;
 }
-#contactTextArea h3 {
+#contactTextArea {
 	grid-column: 1 / 3;	
+}
+#contactTextArea h3 {
 	margin-top: 0;
 }
 .socialIcon{
-	width: 20px;
+	width: 48px;
 	height:	auto;
 }
 /* preston page alert */

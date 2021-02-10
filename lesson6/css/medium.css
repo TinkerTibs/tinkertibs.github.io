@@ -53,9 +53,8 @@
     #mapImg {
         display: block;
     }
-    .socialIcon{
-        width: 25px;
-        height:	auto;
+    #contactTextArea {
+        grid-column: 2 / 3;	
     }
     
 
