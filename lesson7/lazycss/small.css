@@ -1,0 +1,36 @@
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+main {
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* typography */
+h1 {
+	font-size: 20px;
+	color: #ffffff;
+}
+/* heading */
+header {
+	background-color: #153e5c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+picture {
+	max-width: 300px;
+	height: auto;
+}
+img[data-src] {
+	filter: blur(0.2em);
+}
+img {
+	width: 100%;
+	height:	auto;
+	filter: blur(0em);
+	transition: filter 0.5s;
+}

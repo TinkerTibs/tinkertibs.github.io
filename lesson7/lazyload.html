@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment for the Progressive Loading of Images in week 7 in WDD 230.">
+    <title>WDD 230 &bull; Week 7 &bull; Progressive Loading Images</title>
+    <link rel="stylesheet" href="lazycss/normalize.css">
+    <link rel="stylesheet" href="lazycss/small.css">
+    <link rel="stylesheet" href="lazycss/medium.css">
+    <link rel="stylesheet" href="lazycss/large.css">
+</head>
+<body>
+    <header>
+        <h1>Progressive Loading Images</h1>
+    </header>  
+    <nav></nav>
+    <main>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imageone.jpg" alt="forest image">
+        </picture>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imagetwo.jpg" alt="forest image">
+        </picture>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imagethree.jpg" alt="forest image">
+        </picture>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imagefour.jpg" alt="forest image">
+        </picture>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imagefive.jpg" alt="forest image">
+        </picture>
+        <picture>
+            <img src="lazyimages/imageplaceholder.jpg" data-src="lazyimages/imagesix.jpg" alt="forest image">
+        </picture>
+    </main>
+    <footer></footer>
+    <script src="lazyjs/lazy.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Roboto"]}});</script>
+</body>
+</html>
