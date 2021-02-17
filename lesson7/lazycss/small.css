@@ -26,11 +26,11 @@ picture {
 	height: auto;
 }
 img[data-src] {
-	filter: blur(0.2em);
+	filter: blur(0em);
 }
 img {
 	width: 100%;
 	height:	auto;
-	filter: blur(0em);
+	filter: blur(0.2em);
 	transition: filter 0.5s;
 }
