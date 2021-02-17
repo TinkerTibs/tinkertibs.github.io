@@ -14,4 +14,7 @@
     .navigation a {
         font-size: 20px;
     }
+    #weatherGallery {
+        grid-template-columns: 1fr 1fr 1fr;	
+    }
 }
