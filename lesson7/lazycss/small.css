@@ -25,13 +25,14 @@ picture {
 	max-width: 300px;
 	height: auto;
 }
-img[data-src] {
-	filter: blur(0em);
-	transition: filter 0.5s;
-}
+
 img {
 	width: 100%;
 	height:	auto;
 	filter: blur(0.2em);
 
+}
+img[data-src] {
+	filter: blur(0em);
+	transition: filter 0.5s;
 }
