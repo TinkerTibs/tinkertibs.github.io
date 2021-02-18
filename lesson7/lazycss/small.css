@@ -15,7 +15,7 @@ h1 {
 	color: #ffffff;
 }
 /* heading */
-header {
+header, footer {
 	background-color: #153e5c;
 	display: flex;
 	align-items: center;
@@ -33,5 +33,14 @@ img {
 }
 img[data-src] {
 	filter: blur(0.2em);
+}
+a {
+	text-decoration: none;
+}
+footer p a {
+	color: rgba(255, 255, 255, 1);
+}
+footer p a:hover {
+	color:  #87aeb4;
 }
 
