@@ -17,7 +17,7 @@ fetch(requestURL)
         let pimg = document.createElement('img');
         //use templet Literals
         h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-        p.innerHTML = `Date of Birth: ${prophet.birthdate.substring(prophet.birthdate.length - 4)} <br> Place of Birth: ${prophet.birthplace}`;
+        p.innerHTML = `Date of Birth: ${prophet.birthdate} <br> Place of Birth: ${prophet.birthplace}`;
         pimg.setAttribute('src', prophet.imageurl);
         pimg.setAttribute('alt', `Picture of ${prophet.name} who was a prophet`)
 
