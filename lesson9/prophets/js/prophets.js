@@ -19,7 +19,7 @@ fetch(requestURL)
         h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
         p.innerHTML = `Date of Birth: ${prophet.birthdate} <br> Place of Birth: ${prophet.birthplace}`;
         pimg.setAttribute('src', prophet.imageurl);
-        pimg.setAttribute('alt', `Picture of ${prophet.name} who was a prophet`)
+        pimg.setAttribute('alt', `${prophet.name} - ${prophet.order}`)
 
         card.append(h2);
         card.append(p);
