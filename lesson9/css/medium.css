@@ -85,5 +85,17 @@
         border-radius: 10px;
         box-shadow: 0 0 20px #000000;
     }
-
+    /* home page - town info section */
+    #allTownInfo article {
+        flex-direction: row;
+    }
+    #allTownInfo article:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    #allTownInfo div {
+        width: 50%;
+    }
+    .townInfoImg {
+        width: 50%;
+    }
 }
