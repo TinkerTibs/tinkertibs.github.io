@@ -30,7 +30,6 @@
     #allTownInfo article {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
     #allTownInfo article:nth-child(odd) {
         flex-direction: column;
