@@ -4,7 +4,7 @@ const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
 
     const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let newList = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
