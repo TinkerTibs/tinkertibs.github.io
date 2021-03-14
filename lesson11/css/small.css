@@ -44,6 +44,7 @@ header {
 header img {
 	width: 80px;
 	height:	auto;
+	margin-top:4px;
 }
 .headings {
 	display: flex;
