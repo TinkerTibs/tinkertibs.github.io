@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rochester&display=swap');
+
+:root {
+	--color-darkblue: #1e4f7d;
+	--color-lightblue: #70baff;
+	--color-darkbrown: #7d5411;
+	--color-lightbrown: #c99744;
+	--color-black: #000000;
+	--color-white: #ffffff;
+}
+
+
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+main {
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 10px;
+}
+header, nav, footer, #prestonPancakes {
+	margin: 0 auto;
+}
+/* typography */
+h1 {
+	font-size: 20px;
+	color: #1e4f7d;
+}
+h2 {
+	font-size: 16px;
+	color: #1e4f7d;
+}
+h3, legend {
+	font-size: 14px;
+	color: #1e4f7d;
+}
+p, label {
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+}
