@@ -1,4 +1,4 @@
-const hamButton = document.querySelector('.ham');
+const hamButton = document.querySelector('.colapseMenu');
 const mainMenu = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () =>{mainMenu.classList.toggle('responsive')}, false);

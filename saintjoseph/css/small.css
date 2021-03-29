@@ -7,37 +7,109 @@
 	--color-lightbrown: #c99744;
 	--color-black: #000000;
 	--color-white: #ffffff;
-}
-
-
-
-body {
-	font-family: 'Roboto', Arial, sans-serif;
+	--font-heading: 'Neuton', Arial, sans-serif;
+	--font-general: 'Roboto', Arial, sans-serif;
+	--font-special: 'Rochester', Arial, sans-serif;
 }
 main {
 	max-width: 80em;
 	margin: 0 auto;
 	padding: 10px;
 }
-header, nav, footer, #prestonPancakes {
+header, nav, footer {
 	margin: 0 auto;
 }
 /* typography */
-h1 {
+header h1 {
 	font-size: 20px;
-	color: #1e4f7d;
+	margin: 0;
+	color: var(--color-white);
+}
+h1 {
+	font-family: var(--font-heading);
+	color: var(--color-darkblue);
+	font-size: 30px;
 }
 h2 {
+	font-family: var(--font-heading);
+	color: var(--color-darkblue);
+	font-size: 25px;
+}
+h3 {
+	font-family: var(--font-heading);
+	color: var(--color-darkblue);
+	font-size: 20px;
+}
+p {
+	font-family: var(--font-general);
 	font-size: 16px;
-	color: #1e4f7d;
 }
-h3, legend {
-	font-size: 14px;
-	color: #1e4f7d;
+nav {
+	font-family: var(--font-heading);
+	font-size: 18px;
 }
-p, label {
-	font-size: 12px;
+footer {
+	font-family: var(--font-heading);
+	font-size: 16px;
 }
-a {
+/* heading */
+header {
+	background-color: var(--color-darkblue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header img {
+	width: 80px;
+	height:	auto;
+	margin: 10px;
+}
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.moto {
+	font-family: var(--font-special);
+	color: var(--color-lightbrown);
+	font-size: 16px;
+	margin: 0;
+}
+/* navigation */
+nav {
+	background-color: var(--color-lightblue);
+}
+.navigation {
+	max-width: 80em;
+	list-style: none;
+	background-color: var(--color-lightblue);
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: var(--color-black);
 	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
+.responsive li {
+	display: block;
+}
+nav a:hover {
+	background-color: var(--color-darkblue);
+	color: var(--color-white);
+}
+.active {
+	background-color:var(--color-lightbrown);
+	border-left: 4px solid var(--color-darkblue);
+	border-right: 4px solid var(--color-darkblue);
+}
+
