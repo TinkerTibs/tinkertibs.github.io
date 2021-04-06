@@ -1,0 +1,46 @@
+{
+    "businesses": [
+      {
+        "name": "Blue Fox Babies",
+        "contact": "marie@bluefoxhobbies.com<br>",
+        "logo": "images/logobfb.jpg",
+        "weblink": "<a href='https://www.etsy.com/shop/BlueFoxBabies' loading='lazy'>BlueFoxBabies.com</a>"
+      },
+      {
+        "name": "Home Depot",
+        "contact": "(816) 232-2053<br><br>5201 N Belt Line Hwy Bldg C<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logohd.jpg",
+        "weblink": "<a href='https://www.homedepot.com/l/St-Joseph/MO/Saint-Joseph/64506/8984?'>HomeDepot.com</a>"
+      },
+      {
+        "name": "Sam's Clud",
+        "contact": "(816) 279-2192<br><br>5201 N Belt Line<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logosc.jpg",
+        "weblink": "<a href='https://www.samsclub.com/'>SamsClub.com</a>"
+      },
+      {
+        "name": "T.J. Maxx",
+        "contact": "(816) 676-2190<br><br>5201 N Belt Line Hwy<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logotjm.jpg",
+        "weblink": "<a href='https://tjmaxx.tjx.com/'>TJMaxx.com/.com</a>"
+      },
+      {
+        "name": "Michaels",
+        "contact": "(816) 676-2945<br><br>5201 N Belt Line Hwy Ste 125<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logom.jpg",
+        "weblink": "<a href='https://www.michaels.com/'>Michaels.com</a>"
+      },
+      {
+        "name": "Best Buy",
+        "contact": "(816) 671-1345<br><br>5201 N Belt Line Hwy Ste 129<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logobb.jpg",
+        "weblink": "<a href='https://www.bestbuy.com/'>BestBuy.com</a>"
+      },
+      {
+        "name": "Target",
+        "contact": "(816) 671-0550<br><br>5201 N Belt Line Hwy Ste H<br>Saint Joseph, MO 64506<br>",
+        "logo": "images/logot.jpg",
+        "weblink": "<a href='https://www.target.com/'>Target.com</a>"
+      }
+    ]
+  }

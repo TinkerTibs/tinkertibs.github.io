@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a chamber of commerce site for businesses and customers of the city of Saint Joseph">
+    <title>Saint Joseph Businesses</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a href="./"><img src="images/logowhite.png" alt="Logo for Saint Joseph Businesses"></a>
+        <section class="headings"> 
+            <h1>Saint Joseph Businesses</h1>
+            <p class="moto">Helping Businesses Grow</p>
+        </section>        
+    </header>   
+    <nav>
+        <ul class="navigation">
+            <li><a class="colapseMenu" href="#">☰ Menu</a></li>
+            <li><a href="saintjoseph.html">Saint Joseph</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="joinPageLayout">
+            <section>
+                <h2>Join Us!</h2>
+                <p>Join Saint Joseph Businesses and gain access to:</p>
+                <ul>
+                    <li>Directory Listings</li>
+                    <li>Business Trainings</li>
+                    <li>Social Media Posts</li>
+                    <li>Luncheon Tickets</li>
+                    <li>Sponsorships</li>
+                    <li>Advertising</li>
+                </ul>
+                <object>
+                    <img src="images/join.jpg" alt="Saint Joseph Businesses joining together">
+                </object>
+            </section>
+            <form method="get" action="confirmation.html">
+                <fieldset>
+                    <legend>Application Form</legend>
+                    <label>Full Name<input type="text" name="fullname" pattern="[\sa-zA-Z]{5,}" placeholder="Jayne Dough" class="standardInput" required></label>
+                    <label>Title<input type="text" name="title" pattern="[\sa-zA-Z]{5,}" placeholder="Director" class="standardInput"></label>
+                    <label>Email<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@demo.com" class="standardInput" required></label>
+                    <label>Phone Number<input type="tel" name="phone" placeholder="123 456 7890" pattern="[0-9]{10,}" class="standardInput"></label>
+                    <label>Business Name<input type="text" name="buisnessname" placeholder="Monsters Incorporated" class="standardInput" required></label>
+                    <label>Business Address<input type="text" name="address" placeholder="12345 South 1st St" class="standardInput"></label>
+                    <label>Business City & State<input type="text" name="addresstwo" placeholder="St Joseph, MO" class="standardInput"></label>
+                    <label>Business Website<input type="url" name="website" placeholder="www.monstersinc.com" class="standardInput"></label>
+                    <label>Business Description<textarea name="busdescription" placeholder="Add a description of your business here" class="standardInput textArea"></textarea></label>
+
+                    <label class="levelLabel">Membership Level</label>
+                    <label class="radioLabel"><input type="radio" name="memberlevel" value="nonprofit"> Non-profit: $100</label>
+                    <label class="radioLabel"><input type="radio" name="memberlevel" value="bronze"> Bronze: $200</label>
+                    <label class="radioLabel"><input type="radio" name="memberlevel" value="silver"> Silver: $400</label>
+                    <label class="radioLabelLast"><input type="radio" name="memberlevel" value="gold"> Gold: $1000</label>
+                    <input type="submit" value="Submit My Application"> 
+                </fieldset>
+            </form>
+        </div>
+
+        <section class="standardBlue">
+            <h2>Membership Levels</h2>
+            <div id="memlevels">
+                <div class="levelsection">
+                    <h3>Non-Profit</h3>
+                    <p>$100</p>
+                    <div class="levelItems">
+                        <label>Directory Listings:</label> <p>1 listing</p>
+                        <label>Business Trainings:</label> <p>1 per year</p>
+                        <label>Social Media Posts:</label> <p>1 per month</p>
+                        <label>Luncheon Tickets:</label> <p>2 per year</p>
+                        <label>Sponsorships:</label> <p>1 per year</p>
+                        <label>Advertising:</label> <p>1 per month</p>
+                    </div>
+                </div>
+                <div class="levelsection">
+                    <h3>Bronze</h3>
+                    <p>$200</p>
+                    <div class="levelItems">
+                        <label>Directory Listings:</label> <p>2 listing</p>
+                        <label>Business Trainings:</label> <p>2 per year</p>
+                        <label>Social Media Posts:</label> <p>2 per month</p>
+                        <label>Luncheon Tickets:</label> <p>4 per year</p>
+                        <label>Sponsorships:</label> <p>2 per year</p>
+                        <label>Advertising:</label> <p>2 per month</p>
+                    </div>
+                </div>
+                <div class="levelsection">
+                    <h3>Silver</h3>
+                    <p>$400</p>
+                    <div class="levelItems">
+                        <label>Directory Listings:</label> <p>4 listing</p>
+                        <label>Business Trainings:</label> <p>4 per year</p>
+                        <label>Social Media Posts:</label> <p>4 per month</p>
+                        <label>Luncheon Tickets:</label> <p>1 per month</p>
+                        <label>Sponsorships:</label> <p>4 per year</p>
+                        <label>Advertising:</label> <p>4 per month</p>
+                    </div>
+                </div>
+                <div class="levelsection">
+                    <h3>Gold</h3>
+                    <p>$1000</p>
+                    <div class="levelItems">
+                        <label>Directory Listings:</label> <p>10 listing</p>
+                        <label>Business Trainings:</label> <p>1 per month</p>
+                        <label>Social Media Posts:</label> <p>10 per month</p>
+                        <label>Luncheon Tickets:</label> <p>2 per month</p>
+                        <label>Sponsorships:</label> <p>1 per month</p>
+                        <label>Advertising:</label> <p>10 per month</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h3>Contact Information</h3>
+                <p>42 N 1st E<br>Saint Joseph, MO 64505</p>
+                <p>☎ 999.999.9999<br>✉ contact@sjb.com</p>                
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <p><a href="https://facebook.com/" target="_blank">Facebook</a></p>
+                <p><a href="https://pintrest.com/" target="_blank">Pintrest</a></p>
+                <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
+            </div>
+        </section>
+        <div class="footerBottom">
+            <p>&copy;Saint Joseph Businesses
+            <br><a href="https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/">Join Business Image</a>
+            <br><span id="lastDate"></span></p>
+        </div> 
+    </footer>
+    <script src="js/all.js"></script>
+</body>
+</html>

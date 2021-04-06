@@ -23,25 +23,17 @@
         <ul class="navigation">
             <li><a class="colapseMenu" href="#">☰ Menu</a></li>
             <li><a href="saintjoseph.html">Saint Joseph</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <div id="heroArea">
-            <img src="images/heropic.jpg" alt="image of the city of Saint Joseph" sizes="100vw"
-            srcset="images/heropic.jpg 400w,
-                    images/heropicmed.jpg 800w,
-                    images/heropic.jpg 1280w">
+        <div id="directoryButtons">
+            <button type="button" onclick="displayGrid()" id="gridIcon" class=""><img src="images/grid.png" alt="grid icon"></button>
+            <button type="button" onclick="displayList()" id="listIcon" class= "activeIcon"><img src="images/list.png" alt="list icon"></button>
         </div>
-        
-
-        <div id="BusAds">
-
-
-        </div>
-
+        <div id="businesses" class="standardBlue"></div>
     </main>
     <footer>
         <section>
@@ -58,11 +50,12 @@
             </div>
         </section>
         <div class="footerBottom">
-            <p>&copy;Saint Joseph Businesses | Christina Thibodeau
-            <br><a href="https://www.pexels.com/photo/brown-and-green-mountain-view-photo-842711/">Banner Image</a> | <a href="https://openweathermap.org/">Open Weather Map</a>
-                <br><span id="lastDate"></span></p>
+            <p>&copy;Saint Joseph Businesses
+            <br>Logos: <a href="https://www.homedepot.com/">Home Depot</a> | <a href="https://www.samsclub.com/">Sam's Club</a> | <a href="https://tjmaxx.tjx.com/">TJ Maxx</a> | <a href="https://www.michaels.com/">Michaels</a> | <a href="https://www.bestbuy.com/">Best Buy</a> | <a href="https://www.target.com/">Target</a>
+            <br><span id="lastDate"></span></p>
         </div> 
     </footer>
     <script src="js/all.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>

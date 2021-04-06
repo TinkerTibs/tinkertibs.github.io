@@ -27,4 +27,62 @@
     nav ul {
         flex-flow: row wrap;
     }
+    /* footer */
+    footer section {
+	    grid-template-columns: 1fr 1fr;
+    }
+    footer section div:first-child {
+	    text-align: right;
+        border-right: 4px solid var(--color-darkblue);
+        padding-right: 35px;
+    }
+    footer section div:nth-child(2) {
+        padding-left: 35px;
+        text-align: left;
+    }
+    /* directory page */
+    #directoryButtons {
+        display: block;	
+    }
+    .directoryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;	
+    }
+    /* contact page */
+    #contactPageTop {
+        display:grid;
+        grid-template-columns: 1fr 1fr;	
+        margin-bottom: 15px;
+    }
+    #contactPageBottom {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 4px solid var(--color-darkblue);
+    }
+    #contactPageTop section:first-child {
+        margin-top:79px;
+        padding-right: 35px;
+    }
+    #contactPageTop section:nth-child(2) {
+        padding-left: 35px;
+    }
+    #contactPageBottom section:nth-child(2) {
+        padding-left: 35px;
+    }
+    #contactPageBottom section:nth-child(1) {
+        text-align: right;
+        padding-right: 35px;
+        border-right: 4px solid var(--color-darkblue);
+    }
+    .googleMap {
+        width: 100%;
+    }
+    /* join page */
+    #memlevels {
+        grid-template-columns: 1fr 1fr;	
+    }
+    #joinPageLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

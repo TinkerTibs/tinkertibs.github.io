@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 66em) {
     /* typography */
     header h1 {
         font-size: 50px;
@@ -9,5 +9,18 @@
     /* heading */
     .moto {
         font-size: 35px;
+    }
+    /* directory page */
+    .directoryGrid {
+        grid-template-columns: 1fr 1fr 1fr;	
+    }
+    /*contact page */
+    #directorNames {
+        display: grid;
+        grid-template-columns: 1fr 1fr;	
+    }
+    /* join page */
+    #memlevels {
+        grid-template-columns: 1fr 1fr 1fr 1fr;	
     }
 }
