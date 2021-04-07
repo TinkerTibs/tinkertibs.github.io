@@ -1,3 +1,15 @@
+
+
+
+
+var currentDate = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+document.getElementById("todayDate").innerHTML = days[currentDate.getDay()] + ", " + months[currentDate.getMonth()] + " " + currentDate.getDate();
+
+
+
 const apiOnecallURL = "https://api.openweathermap.org/data/2.5/onecall?lat=39.82437152956331&lon=-94.80195999271336&APPID&APPID=c1dcfb6c8efcda936d6f6f66d54711d8&units=imperial";
 
 fetch(apiOnecallURL)
