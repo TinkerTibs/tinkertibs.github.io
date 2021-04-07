@@ -40,6 +40,34 @@
         padding-left: 35px;
         text-align: left;
     }
+    /* home top section */
+    #topSection {
+	    grid-template-columns: 1fr 1fr;
+    }
+    /* business ads */
+    #busAds {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* forecast */
+    #weatherArea {
+        grid-template-columns: auto auto;	
+    }
+    #forcastThree {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #weatherArea h2 {
+        margin-top: 0;
+    }
+    /* city page */
+    #events {
+        grid-template-columns: 1fr 1fr;	
+    }
+    #cityflex {
+        grid-template-columns: 1fr 1fr;	
+    }
+    #cityImg img {
+        margin: 60px 0 10px 15px;
+    }
     /* directory page */
     #directoryButtons {
         display: block;	

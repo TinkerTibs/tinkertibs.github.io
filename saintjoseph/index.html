@@ -35,13 +35,54 @@
                     images/heropicmed.jpg 800w,
                     images/heropic.jpg 1280w">
         </div>
-        
-
-        <div id="BusAds">
-
-
+        <div id="topSection">
+            <section id="goalsArea">
+                <h2>Goals</h2>
+                <p></p>
+                <h2>Join Us</h2>
+                <div>
+                    <a href="join.html" class="button">Join Saint Joseph Businesses</a>
+                </div>
+            </section>
+            <div>
+                <h2>Events</h2>
+                <div id="homeEvents"></div>
+                <a href="saintjoseph.html" class="button">More Event Information</a>
+            </div>
         </div>
-
+        <div id="busAds" class="standardBlue"></div>
+        <div id="weatherArea">
+            <section>
+                <h2 class="centered">Today's Weather</h3>
+                <div class="currentWeather">
+                    <label>Currently: </label><p><span id="currentCond"></span></p>
+                    <label>Temperature: </label><p><span id="currentTemp"></span>&deg;F</p>
+                    <label>Humidity: </label><p><span id="currentHum"></span>%</p>
+                    <label>Wind Speed: </label><p><span id="currentWind"></span> mph</p>
+                    <label>Feels Like: </label><p><span id="currentFeel"></span>&deg;F</p>
+                </div>
+            </section>
+            <section>
+                <h2>Weather Forecast</h3>
+                <div id="forcastThree">
+                    <div class="forcastCol">
+                        <p class="forcastDay"><span id="dayWeek1"></span></p>
+                        <img id="icon1" src="images/forecast.jpg" alt="weather image">
+                        <p class="forcastTemp"><span id="forecast1"></span>&deg;F</p>
+                    </div>
+                    <div class="forcastCol">
+                        <p class="forcastDay"><span id="dayWeek2"></span></p>
+                        <img id="icon2" src="images/forecast.jpg" alt="weather image">
+                        <p class="forcastTemp"><span id="forecast2"></span>&deg;F</p>
+                    </div>
+                    <div class="forcastCol">
+                        <p class="forcastDay"><span id="dayWeek3"></span></p>
+                        <img id="icon3" src="images/forecast.jpg" alt="weather image">
+                        <p class="forcastTemp"><span id="forecast3"></span>&deg;F</p>
+                    </div>
+                </div>
+            </section>
+        </div>  
     </main>
     <footer>
         <section>
@@ -60,9 +101,12 @@
         <div class="footerBottom">
             <p>&copy;Saint Joseph Businesses | Christina Thibodeau
             <br><a href="https://www.pexels.com/photo/brown-and-green-mountain-view-photo-842711/">Banner Image</a> | <a href="https://openweathermap.org/">Open Weather Map</a>
-                <br><span id="lastDate"></span></p>
+            <br><span id="lastDate"></span></p>
         </div> 
     </footer>
     <script src="js/all.js"></script>
+    <script src="js/homeEvents.js"></script>
+    <script src="js/busAds.js"></script>
+    <script src="js/forecast.js"></script>
 </body>
 </html>

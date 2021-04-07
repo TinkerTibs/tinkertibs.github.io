@@ -2,12 +2,14 @@
     "businesses": [
       {
         "name": "Blue Fox Babies",
+        "ad": "yes",
         "contact": "marie@bluefoxhobbies.com<br>",
         "logo": "images/logobfb.jpg",
-        "weblink": "<a href='https://www.etsy.com/shop/BlueFoxBabies' loading='lazy'>BlueFoxBabies.com</a>"
+        "weblink": "<a href='https://www.etsy.com/shop/BlueFoxBabies'>BlueFoxBabies.com</a>"
       },
       {
         "name": "Home Depot",
+        "ad": "yes",
         "contact": "(816) 232-2053<br><br>5201 N Belt Line Hwy Bldg C<br>Saint Joseph, MO 64506<br>",
         "logo": "images/logohd.jpg",
         "weblink": "<a href='https://www.homedepot.com/l/St-Joseph/MO/Saint-Joseph/64506/8984?'>HomeDepot.com</a>"
@@ -20,6 +22,7 @@
       },
       {
         "name": "T.J. Maxx",
+        "ad": "yes",
         "contact": "(816) 676-2190<br><br>5201 N Belt Line Hwy<br>Saint Joseph, MO 64506<br>",
         "logo": "images/logotjm.jpg",
         "weblink": "<a href='https://tjmaxx.tjx.com/'>TJMaxx.com/.com</a>"

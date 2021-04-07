@@ -1,0 +1,55 @@
+{
+    "events": [
+      {
+        "name": "Patee House Museum",
+        "home":"yes",
+        "overview": "The mission of the Pony Express Historical Association is to interpret the early history and development of St. Joseph, from the days of the Pony Express and Jesse James to the 1920s, using authentic artifacts in the buildings where these events actually occurred.",
+        "hours": "Sun: 12:00 PM - 4:00 PM<br>Mon - Sat: 9:00 AM - 4:00 PM",
+        "duration": "1-2 hours",
+        "address": "1202 Penn St, Saint Joseph, MO 64503",
+        "image": "images/eventone.jpg"
+      },
+      {
+        "name": "Glore Psychiatric Museum",
+        "overview": "Housed in the medical, surgical, and admitting unit of the former St. Joseph State Hospital, the museum is one of only a few of its kind. The original displays created in 1968 by the museum’s namesake, George Glore, are still a part of the collection. These exhibits give visitors a life-size visual of what mental health treatment devices looked like in the 17th, 18th and 19th centuries.",
+        "hours": "Sun: 1:00 PM - 4:00 PM<br>Mon - Sat: 10:00 AM - 4:00 PM",
+        "duration": "1-2 hours",
+        "address": "3406 Frederick Ave, Saint Joseph, MO 64506",
+        "image": "images/eventtwo.jpg"      
+      },
+      {
+        "name": "Pony Express Museum",
+        "home":"yes",
+        "overview": "Today, the Pony Express National Museum stands as a tribute to the legend and legacy of the Pony Express and its enduring era. Come experience the many exciting, educational, interactive exhibits conveying the need, creation, and termination of the Pony Express.",
+        "hours": "Sun: 11:00 AM - 4:00 PM<br>Mon - Sat: 9:00 AM - 5:00 PM",
+        "duration": "1-2 hours",
+        "address": "914 Penn St, St. Joseph, MO 64503",
+        "image": "images/eventthree.jpg"      
+      },
+      {
+        "name": "Remington Nature Center",
+        "home":"yes",
+        "overview": "Overlooking the Missouri River, this center caters to history and nature buffs alike. Peer into a 7,000-gallon freshwater aquarium; explore the history of the St. Joseph area; stand trunk to nose with a woolly mammoth replica.",
+        "hours": "Sun: 1:00 PM - 5:00 PM<br>Mon - Sat: 10:00 AM - 5:00 PM",
+        "duration": "1-2 hours",
+        "address": "1502 McArthur Dr, Saint Joseph, MO 64505",
+        "image": "images/eventfour.jpg"      
+      },
+      {
+        "name": "Walter Cronkite Memorial",
+        "overview": "The Walter Cronkite Memorial was the vision of Dr. Robert Vartabedian, President of Missouri Western State University, to create a fitting memorial to St. Joseph's beloved native son and one of the most important and trusted voices in our country's history.",
+        "hours": "Sun: 1:00 PM - 4:00 PM<br>Mon - Sat: 10:00 AM - 4:00 PM",
+        "duration": "1-2 hours",
+        "address": "4525 Downs Dr, St Joseph, MO 64507",
+        "image": "images/eventfive.jpg"      
+      },
+      {
+        "name": "Albrecht-Kemper Museum of Art",
+        "overview": "A work of art itself, the Albrecht-Kemper Museum of Art houses one of the finest collections of American Art from the Colonial period to the present. The former William Albrecht home provides the perfect backdrop for works by artist including Mary Cassatt, Thomas Hart Benton, Gilbert Stuart, and Albert Bierstadt.",
+        "hours": "Sun: 1:00 PM - 4:00 PM<br>Mon - Sat: 10:00 AM - 4:00 PM",
+        "duration": "< 1 hour",
+        "address": "2818 Frederick Ave, Saint Joseph, MO 64506",
+        "image": "images/eventsix.jpg"      
+      }
+    ]
+  }

@@ -10,6 +10,14 @@
     .moto {
         font-size: 35px;
     }
+    /* business ads */
+    #busAds {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /* city page */
+    #events {
+        grid-template-columns: 1fr 1fr 1fr;	
+    }
     /* directory page */
     .directoryGrid {
         grid-template-columns: 1fr 1fr 1fr;	
