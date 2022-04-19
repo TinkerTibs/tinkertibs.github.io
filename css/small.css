@@ -36,6 +36,7 @@ li a:hover {
 
 footer p a {
 	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
 }
 footer p a:hover {
 	color: rgba(143, 143, 143, 1);
