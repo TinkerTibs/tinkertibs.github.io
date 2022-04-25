@@ -26,6 +26,11 @@ header img {
 main {
 	padding-left: 20px;
 }
+main p {
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 li a {
 	color: rgb(0, 45, 104, .7);
 	text-decoration: none;
