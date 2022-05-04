@@ -1,152 +1,181 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my assignment for this week's WDD 330 group work.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my assignment for this week's WDD 330 group work."
+    />
     <title>WDD 330 &bull; Group Work</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap');
-        header, footer, main {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        header, footer {
-            background-color: rgb(0, 45, 104);
-            color: rgba(255, 255, 255);
-            padding: 5px;
-            text-align: center;	
-            border-radius: 12px;
-            margin-bottom: 15px;
-            margin-top: 10px;
-        }
-        main, footer {
-            font-size: 16px;
-            font-family: 'Roboto', Arial, sans-serif;
-        }
-        h1 {
-            font-family: 'Philosopher', "Arial Black", fantasy;
-        }
-        button {
-            background-color: rgb(0, 45, 104);
-            border: none;
-            color: white;
-            padding: 10px 30px;
-            margin: 10px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 12px;
-        }
-        input {
-            padding: 10px;
-            font-size: 16px;
-            margin-left: 10px;
-        }
-        textarea {
-            width:980px;
-            height: 250px;
-            background-color: rgb(0, 45, 104, .2);
-            padding: 10px;
-            font-size: 16px;
-        }
-        footer p a {
-            color: rgba(255, 255, 255, 1);
-            text-decoration: none;
-        }
-        footer p a:hover {
-            color: rgba(143, 143, 143, 1);
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
+      header,
+      footer,
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      header,
+      footer {
+        background-color: rgb(0, 45, 104);
+        color: rgba(255, 255, 255);
+        padding: 5px;
+        text-align: center;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      main,
+      footer {
+        font-size: 16px;
+        font-family: "Roboto", Arial, sans-serif;
+      }
+      h1 {
+        font-family: "Philosopher", "Arial Black", fantasy;
+      }
+      button {
+        background-color: rgb(0, 45, 104);
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 12px;
+      }
+      input {
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      textarea {
+        width: 980px;
+        height: 250px;
+        background-color: rgb(0, 45, 104, 0.2);
+        padding: 10px;
+        font-size: 16px;
+      }
+      footer p a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+      }
+      footer p a:hover {
+        color: rgba(143, 143, 143, 1);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>WDD 330</h1>
-    </header>    
+      <h1>WDD 330</h1>
+    </header>
     <main>
-        <h2>Week 2 &bull; Group Work</h2>
-        <hr>
-        <p>Part 1</p>
-        <input type="text" id="stepOneInput">
-        <button onclick="functionOne()">Display Input</button>
-        <div id="stepOneOutput"></div>
-        <hr>
-        <p>Part 2</p>
-        <input type="text" id="stepTwoInput">
-        <button onclick="functionTwo()">Add To Number</button>
-        <div id="stepTwoOutput"></div>
-        <hr>
-        <p>Part 3</p>
-        <input type="text" id="stepThreeInputOne">
-        <input type="text" id="stepThreeInputTwo">
-        <button onclick="functionThree()">Add Numbers</button>
-        <div id="stepThreeOutput"></div>
-        <hr>
-        <p>Stretch 1</p>
-        <input type="text" id="stretchOneInputOne">
-        <input type="text" id="stretchOneInputTwo">
-        <button onclick="stretchOneAdd()">Add</button>
-        <button onclick="stretchOneSubtract()">Subtract</button>
-        <button onclick="stretchOneMultiply()">Multiply</button>
-        <button onclick="stretchOneDivide()">Divide</button>
-        <div id="stretchOneOutput"></div>
+      <h2>Week 2 &bull; Group Work</h2>
+      <hr />
+      <p>Part 1</p>
+      <input type="text" id="stepOneInput" />
+      <button onclick="functionOne()">Display Input</button>
+      <div id="stepOneOutput"></div>
+      <hr />
+      <p>Part 2</p>
+      <input type="text" id="stepTwoInput" />
+      <button onclick="functionTwo()">Add To Number</button>
+      <div id="stepTwoOutput"></div>
+      <hr />
+      <p>Part 3</p>
+      <input type="text" id="stepThreeInputOne" />
+      <input type="text" id="stepThreeInputTwo" />
+      <button onclick="functionThree()">Add Numbers</button>
+      <div id="stepThreeOutput"></div>
+      <hr />
+      <p>Stretch 1</p>
+      <input type="text" id="stretchOneInputOne" />
+      <input type="text" id="stretchOneInputTwo" />
+      <button onclick="stretchOneAdd()">Add</button>
+      <button onclick="stretchOneSubtract()">Subtract</button>
+      <button onclick="stretchOneMultiply()">Multiply</button>
+      <button onclick="stretchOneDivide()">Divide</button>
+      <div id="stretchOneOutput"></div>
     </main>
     <footer>
-        <p><a href="/index.html">Portfolio</a>
+      <p><a href="/index.html">Portfolio</a></p>
     </footer>
+
     <script>
-        function functionOne() {
-            let firstInput = document.getElementById("stepOneInput").value;
-            document.getElementById("stepOneOutput").innerHTML = firstInput;
+      function functionOne() {
+        let firstInput = document.getElementById("stepOneInput").value;
+        document.getElementById("stepOneOutput").innerHTML = firstInput;
+      }
+      function functionTwo() {
+        let secondInput = parseInt(
+          document.getElementById("stepTwoInput").value
+        );
+        let count = 0;
+        for (let i = 1; i <= secondInput; i++) {
+          count += i;
         }
-        function functionTwo() {
-            let secondInput = parseInt(document.getElementById("stepTwoInput").value);
-            let count = 0;
-            for (let i = 1; i <=secondInput; i++) {
-                count += i;
-            }
-            document.getElementById("stepTwoOutput").innerHTML = count;
+        document.getElementById("stepTwoOutput").innerHTML = count;
+      }
+      function functionThree() {
+        let thirdInputOne = parseInt(
+          document.getElementById("stepThreeInputOne").value
+        );
+        let thirdInputTwo = parseInt(
+          document.getElementById("stepThreeInputTwo").value
+        );
+        let sum = thirdInputOne + thirdInputTwo;
+        document.getElementById("stepThreeOutput").innerHTML = sum;
+      }
+      //create callback
+      function firstInput() {
+        let stretchOne = parseInt(
+          document.getElementById("stretchOneInputOne").value
+        );
+        return stretchOne;
+      }
+      function secondInput() {
+        let stretchTwo = parseInt(
+          document.getElementById("stretchOneInputTwo").value
+        );
+        return stretchTwo;
+      }
+      // a function declaration
+      function stretchOneDivide() {
+        function declarDiv(x, y) {
+          return x / y;
         }
-        function functionThree() {
-            let thirdInputOne = parseInt(document.getElementById("stepThreeInputOne").value);
-            let thirdInputTwo = parseInt(document.getElementById("stepThreeInputTwo").value);
-            let sum = thirdInputOne + thirdInputTwo
-            document.getElementById("stepThreeOutput").innerHTML = sum;
-        }
-        //create callback
-        function firstInput() {
-            let stretchOne = parseInt(document.getElementById("stretchOneInputOne").value);
-            return stretchOne;
-        }
-        function secondInput() {
-            let stretchTwo = parseInt(document.getElementById("stretchOneInputTwo").value);
-            return stretchTwo;
-        }
-        // a function declaration
-        function stretchOneDivide() {
-            function declarDiv(x, y) {
-                return x / y;
-            };
-            document.getElementById("stretchOneOutput").innerHTML = declarDiv(firstInput(), secondInput());
-        }        
-        // a function expression
-        function stretchOneMultiply() {
-            let expressMult = function(x, y) {
-                return x * y;
-            };
-            document.getElementById("stretchOneOutput").innerHTML = expressMult(firstInput(), secondInput());
-        }  
-        //an arrow function
-        function stretchOneSubtract() {
-            let arrowSub = (x,y) => x - y;
-            document.getElementById("stretchOneOutput").innerHTML = arrowSub(firstInput(), secondInput());
-        }
-        // original function from step 3
-        function stretchOneAdd() {
-            let stretchOneAdd = firstInput() + secondInput();
-            document.getElementById("stretchOneOutput").innerHTML = stretchOneAdd;
-        }
+        document.getElementById("stretchOneOutput").innerHTML = declarDiv(
+          firstInput(),
+          secondInput()
+        );
+      }
+      // a function expression
+      function stretchOneMultiply() {
+        let expressMult = function (x, y) {
+          return x * y;
+        };
+        document.getElementById("stretchOneOutput").innerHTML = expressMult(
+          firstInput(),
+          secondInput()
+        );
+      }
+      //an arrow function
+      function stretchOneSubtract() {
+        let arrowSub = (x, y) => x - y;
+        document.getElementById("stretchOneOutput").innerHTML = arrowSub(
+          firstInput(),
+          secondInput()
+        );
+      }
+      // original function from step 3
+      function stretchOneAdd() {
+        let stretchOneAdd = firstInput() + secondInput();
+        document.getElementById("stretchOneOutput").innerHTML = stretchOneAdd;
+      }
     </script>
-    <script>WebFont.load({google: {families: ["Roboto", "Milonga"]}});</script>
-</body>
+    <script>
+      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
+    </script>
+  </body>
 </html>

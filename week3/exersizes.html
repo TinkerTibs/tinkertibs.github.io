@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my examples and exersize page for this week's WDD 330 reading."
+    />
+    <title>WDD 330 &bull; Examples/Exersizes</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
+      header,
+      footer,
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      header,
+      footer {
+        background-color: rgb(0, 45, 104);
+        color: rgba(255, 255, 255);
+        padding: 5px;
+        text-align: center;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      main,
+      footer {
+        font-size: 16px;
+        font-family: "Roboto", Arial, sans-serif;
+      }
+      h1 {
+        font-family: "Philosopher", "Arial Black", fantasy;
+      }
+      button {
+        background-color: rgb(0, 45, 104);
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 12px;
+      }
+      input {
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      textarea {
+        width: 980px;
+        height: 250px;
+        background-color: rgb(0, 45, 104, 0.2);
+        padding: 10px;
+        font-size: 16px;
+      }
+      footer p a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+      }
+      footer p a:hover {
+        color: rgba(143, 143, 143, 1);
+      }
+      table {
+        font-family: "Roboto", Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table td,
+      table th {
+        border: 1px solid rgb(219, 219, 219);
+        padding: 8px;
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgb(187, 187, 187);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 45, 104, 0.247);
+      }
+
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(0, 45, 104);
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 330</h1>
+    </header>
+    <main>
+      <h2>Week 3 &bull; Examples & Exersizes</h2>
+      <hr />
+      <h3>Sandbox Exercises</h3>
+      <h4>14.1 Build a Table</h4>
+      <p>Mountains</p>
+      <button onclick="functionOne()">Display Content</button>
+      <div id="mountains"></div>
+    </main>
+    <footer>
+      <p><a href="/index.html">Portfolio</a></p>
+    </footer>
+
+    <script>
+      function functionOne() {
+        var x = document.getElementById("mountains");
+        if (x.style.display === "none") {
+          mountainFunction();
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function mountainFunction() {
+        const MOUNTAINS = [
+          { name: "Kilimanjaro", height: 5895, place: "Tanzania" },
+          { name: "Everest", height: 8848, place: "Nepal" },
+          { name: "Mount Fuji", height: 3776, place: "Japan" },
+          { name: "Vaalserberg", height: 323, place: "Netherlands" },
+          { name: "Denali", height: 6168, place: "United States" },
+          { name: "Popocatepetl", height: 5465, place: "Mexico" },
+          { name: "Mont Blanc", height: 4808, place: "Italy/France" },
+        ];
+
+        function buildTable(data) {
+          let table = document.createElement("table");
+          let fields = Object.keys(data[0]);
+          let headRow = document.createElement("tr");
+          fields.forEach(function (field) {
+            let headCell = document.createElement("th");
+            headCell.appendChild(document.createTextNode(field));
+            headRow.appendChild(headCell);
+          });
+
+          table.appendChild(headRow);
+          data.forEach(function (object) {
+            let row = document.createElement("tr");
+            fields.forEach(function (field) {
+              let cell = document.createElement("td");
+              cell.appendChild(document.createTextNode(object[field]));
+              row.appendChild(cell);
+            });
+            table.appendChild(row);
+          });
+          return table;
+        }
+        document.getElementById("mountains").appendChild(buildTable(MOUNTAINS));
+      }
+    </script>
+    <script>
+      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
+    </script>
+  </body>
+</html>
