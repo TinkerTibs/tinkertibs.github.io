@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my assignment for this week's WDD 330 group work."
+    />
+    <title>WDD 330 &bull; Group Work</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
+      header,
+      footer,
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      header,
+      footer {
+        background-color: rgb(0, 45, 104);
+        color: rgba(255, 255, 255);
+        padding: 5px;
+        text-align: center;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      main,
+      footer {
+        font-size: 16px;
+        font-family: "Roboto", Arial, sans-serif;
+      }
+      h1 {
+        font-family: "Philosopher", "Arial Black", fantasy;
+      }
+
+      footer p a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+      }
+      footer p a:hover {
+        color: rgba(143, 143, 143, 1);
+      }
+      /* Core Requirements Step 1: 3x3 board CSS */
+      * {
+        box-sizing: border-box;
+      }
+      #gameBoard {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+      }
+      .gridBox {
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+      }
+      /* Stretch Goal: Step 1: changing boarder  */
+      .gridBox:first-child,
+      .gridBox:nth-child(2),
+      .gridBox:nth-child(3) {
+        border-top: none;
+      }
+      .gridBox:first-child,
+      .gridBox:nth-child(4),
+      .gridBox:nth-child(7) {
+        border-left: none;
+      }
+      .gridBox:nth-child(3),
+      .gridBox:nth-child(6),
+      .gridBox:nth-child(9) {
+        border-right: none;
+      }
+      .gridBox:nth-child(7),
+      .gridBox:nth-child(8),
+      .gridBox:nth-child(9) {
+        border-bottom: none;
+      }
+      /* Core Requirements Step 2: adding the X or O */
+      /* Creates the X shape */
+      .gridBox.x::before,
+      .gridBox.x::after,
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::before,
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 90px;
+        background-color: rgb(0, 0, 0);
+      }
+      .gridBox.x::before,
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::before {
+        transform: rotate(45deg);
+      }
+      .gridBox.x::after,
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::after {
+        transform: rotate(-45deg);
+      }
+      /* Creates the O shape */
+      .gridBox.o::before,
+      .gridBox.o::after,
+      .gameBoard.o .gridBox:not(.x):not(.o):hover::before,
+      .gameBoard.o .gridBox:not(.x):not(.o):hover::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+      }
+      .gridBox.o::before,
+      .gameBoard.o .gridBox:not(.x):not(.o):hover::before {
+        width: 85px;
+        height: 85px;
+        background-color: rgb(0, 0, 0);
+      }
+      .gridBox.o::after,
+      .gameBoard.o .gridBox:not(.x):not(.o):hover::after {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+      }
+      /* Adds a visual indication that a cell can be clicked on */
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::before,
+      .gameBoard.x .gridBox:not(.x):not(.o):hover::after,
+      .gameBoard.o .gridBox:not(.x):not(.o):hover::before {
+        background-color: rgba(143, 143, 143);
+      }
+      /* Adds a visual indication for where you can't go */
+      .gridBox.x,
+      .gridBox.o {
+        cursor: not-allowed;
+      }
+      /* Core Requirements Step 3: reset button  */
+      button {
+        background-color: rgba(255, 255, 255);
+        border: none;
+        color: rgb(0, 45, 104);
+        padding: 10px 30px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 26px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        color: rgba(255, 255, 255);
+        background-color: rgb(0, 45, 104);
+      }
+
+      /* Stretch Goal: Step 2: game logic  */
+      .winMessage {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+      }
+      .winMessage.show {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 330</h1>
+    </header>
+    <main>
+      <h2>Week 4 &bull; Group Work</h2>
+      <hr />
+      <!-- Core Requirements Step 1: 3x3 board HTML -->
+      <h3>Tic Tac Toe</h3>
+      <div class="gameBoard" id="gameBoard">
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+        <div class="gridBox" data-cell></div>
+      </div>
+      <!-- Core Requirements Step 3: reset button -->
+      <div class="winMessage" id="winMessage">
+        <div data-winning-message-text></div>
+        <button id="resetButton">Restart</button>
+      </div>
+    </main>
+    <footer>
+      <p><a href="/index.html">Portfolio</a></p>
+    </footer>
+    <script>
+      const cellElements = document.querySelectorAll("[data-cell]");
+      const board = document.getElementById("gameBoard");
+      const winningMessageElement = document.getElementById("winMessage");
+      const restartButton = document.getElementById("resetButton");
+      const winningMessageTextElement = document.querySelector(
+        "[data-winning-message-text]"
+      );
+      const xClass = "x";
+      const oClass = "o";
+      // Stretch Goal: Step 2 & 3: adding game logic
+      const winningCombinations = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ];
+      let oTurn;
+      // calls the start game function to set the board on website loading
+      startGame();
+      // Core Requirements Step 3: reset button
+      // adds event listener for click
+      restartButton.addEventListener("click", startGame);
+      // this function set's the board to it's starting point
+      function startGame() {
+        oTurn = false;
+        cellElements.forEach((cell) => {
+          cell.classList.remove(xClass);
+          cell.classList.remove(oClass);
+          cell.removeEventListener("click", handleClick);
+          cell.addEventListener("click", handleClick, { once: true });
+        });
+        setBoardHoverClass();
+        winningMessageElement.classList.remove("show");
+      }
+      // places mark and checks to see if there is a draw/win & if not changes turns
+      function handleClick(e) {
+        const cell = e.target;
+        const currentClass = oTurn ? oClass : xClass;
+        placeMark(cell, currentClass);
+        if (checkWin(currentClass)) {
+          endGame(false);
+        } else if (isDraw()) {
+          endGame(true);
+        } else {
+          swapTurns();
+          setBoardHoverClass();
+        }
+      }
+      // function for end of game message
+      function endGame(draw) {
+        if (draw) {
+          winningMessageTextElement.innerText = "Draw!";
+        } else {
+          winningMessageTextElement.innerText = `${
+            oTurn ? "O's" : "X's"
+          } Wins!`;
+        }
+        winningMessageElement.classList.add("show");
+      }
+      // draw game function
+      function isDraw() {
+        return [...cellElements].every((cell) => {
+          return (
+            cell.classList.contains(xClass) || cell.classList.contains(oClass)
+          );
+        });
+      }
+      // adds the class 
+      function placeMark(cell, currentClass) {
+        cell.classList.add(currentClass);
+      }
+      // changes the player's turn
+      function swapTurns() {
+        oTurn = !oTurn;
+      }
+      // sets the proper hover to help indicate whose turn it is
+      function setBoardHoverClass() {
+        board.classList.remove(xClass);
+        board.classList.remove(oClass);
+        if (oTurn) {
+          board.classList.add(oClass);
+        } else {
+          board.classList.add(xClass);
+        }
+      }
+      // checks to see if there is a winner
+      function checkWin(currentClass) {
+        return winningCombinations.some((combination) => {
+          return combination.every((index) => {
+            return cellElements[index].classList.contains(currentClass);
+          });
+        });
+      }
+    </script>
+    <script>
+      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
+    </script>
+  </body>
+</html>

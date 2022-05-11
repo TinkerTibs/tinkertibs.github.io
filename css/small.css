@@ -53,3 +53,6 @@ li {
   list-style-type: none;
   margin: 5px;
 }
+.indented {
+  padding-left: 25px;
+}

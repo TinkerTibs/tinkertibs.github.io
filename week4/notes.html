@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="These are my notes for this week's WDD 330 Assignments.">
+    <title>WDD 330 &bull; Notes</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/small.css">
+    <link rel="stylesheet" href="/css/medium.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 330</h1>
+    </header>    
+    <main>
+        <h2>Week 4 &bull; Notes</h2>
+        <hr>
+        <p>&bull; Reset buttons are generally considered poor for usability because they are too easy to click and then wipe out all the data that's been entered</p>
+        <p>&bull; Hidden fields are not displayed by the browser, but have a 'value' attribute that can contain information that is submitted with the form</p>
+        <p>&bull; Consider disabling the submit button if there are errors on the form. If the submit button is disabled then no action is taken when it's clicked</p>
+        <p>&bull; All objects have a constructor property that returns the constructor function that created it</p>
+        <p>&bull; JavaScript uses a prototypal inheritance model. This means that every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class's prototype can be accessed by every object instantiated by that class</p>
+        <p>&bull; The prototype object is live, so if a new property or method is added to the prototype, any instances of its class will inherit the new properties and methods automatically, even if that instance has already been created</p>
+        <p>&bull; It is not possible to overwrite the prototype by assigning it to a new object literal if class declarations are used. It is possible to do this if constructor functions are used, and it can cause a lot of headaches if you accidentally redefine the prototype. This is because any instances that have already been created will retain the properties and methods of the old prototype, but will not receive any of the new properties and methods that are subsequently added to the redefined prototype. This is another reason why it's recommended to use class declarations instead of constructor functions</p>
+        <p>&bull; An object instance can overwrite any properties or methods inherited from its prototype by simply assigning a new value to them</p>
+        <p>&bull; Never use arrays or objects as a default value in prototype</p>
+        <p>&bull; To summarize, the following points should be considered when using classes and prototypes to create instances:</p>
+        <p class="indented">&bull; Create a class declaration that deals with any initialization, shared properties and methods</p>
+        <p class="indented">&bull; Any extra methods and properties that need to be augmented to the class declaration after it's been defined can be added to the prototype. These will be added to all instances, even those that have already been created</p>
+        <p class="indented">&bull; Add any properties or methods that are individual to a particular instance can be augmented using assignment to that object (a mixin could be used to add multiple properties at once)</p>
+        <p class="indented">&bull; Be careful when overwriting the prototype completely ― the constructor class needs to be reset</p>
+        <p>&bull; By default, an object's methods are public in JavaScript. Methods and properties are said to be public because they can be queried directly and changed by assignment. The dynamic nature of the language means that an object's properties and methods can be changed after it has been created</p>
+        <p>&bull; The prototype is just another object, so it also has its own prototype, which in turn has its own prototype... and so on, creating a chain of inheritance</p>
+        <p>&bull; When an object calls a method, the JavaScript engine will check to see if the object has that method. If it doesn't, it will check if the object's prototype has the method. If not, it will check whether the prototype's prototype has it. This continues all the way up the prototype chain, until it reaches the prototype of the Object() constructor function, from which all objects in JavaScript inherit. If the prototype of Object() is without the method, an error will be returned saying the object doesn't exist</p>
+        <p>&bull; Properties of objects in JavaScript are said to be enumerable or non-enumerable. If they aren't enumerable, this means they will not show up when a for-in loop is used to loop through an object's properties and methods</p>
+        <p>&bull; There is a method called propertyIsEnumerable() that every object has (because it's a method of Object.prototype) that can be used to check if a property is enumerable</p>
+        <p>&bull; The concept of polymorphism means that different objects can have the same method, but implement it in different ways</p>
+        <p>&bull; It is possible to add more methods to the prototype of JavaScript's built-in objects — such as Number, String, and Array — to add more functionality</p>
+        <p>&bull; An object property descriptor can have get() and set() methods instead of a value attribute</p>
+        <p>&bull; It's possible to avoid using classes altogether, and create new objects based on another object that acts as a 'blueprint' or prototype instead</p>
+        <p>&bull; Creating objects from objects will create a prototype chain</p>
+        <p>&bull; A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by 'mixing' basic objects together</p>
+        <p>&bull; One use for the mixin() function is to add a large number of properties to an object all at once</p>
+        <p>&bull; It's possible to borrow methods from objects without having to inherit all their properties and methods. This is done by making a reference to the function that you want to borrow (that is, without parentheses so that it isn't invoked)</p>
+        <p>&bull; A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules</p>
+        <p>&bull; The coupling of code refers to how dependent certain elements or modules of code are on each other. Two pieces of code are said to be tightly coupled if one relies on the other to run</p>
+        <p>&bull; There are a few important points about modules that are worth keeping in mind:</p>
+        <p class="indented">&bull; All code in modules is always in strict mode without the need for 'use strict' and there is no way to opt out of this</p>
+        <p class="indented">&bull; A module has its own global scope, so any variables created in the top-level of a module can only be accessed within that module</p>
+        <p class="indented">&bull; The value of this in the top level of a module is undefined, rather than the global object</p>
+        <p class="indented">&bull; You can't use HTML-style comments in modules</p>
+        <p>&bull; Default exports refer to a single variable, function or class in a module that can be imported without having to be explicitly named. The syntax for default exports is purposely easier to read because this is how modules were designed to be used</p>
+        <p>&bull; Having more than one default export will result in a syntax error</p>
+        <p>&bull; The alias that is assigned to the imported module does not have to match its name in the actual module</p>
+    </main>
+    <footer>
+        <p><a href="/index.html">Portfolio</a>
+    </footer>
+    <script>WebFont.load({google: {families: ["Roboto", "Milonga"]}});</script>
+</body>
+</html>
