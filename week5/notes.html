@@ -14,24 +14,35 @@
         <h1>WDD 330</h1>
     </header>    
     <main>
-        <h2>Week 4 &bull; Notes</h2>
+        <h2>Week 5 &bull; Notes</h2>
         <hr>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
+        <p>&bull; Errors are caused when something goes wrong in a program. They are usually caused by one of the following:</p>
+        <p class="indented">&bull; System error ― there's a problem with the system or external devices with which the program is interacting</p>
+        <p class="indented">&bull; Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as simple as a typo</p>
+        <p class="indented">&bull; User error ― the user has entered data incorrectly, which the program is unable to handle</p>
+        <p>&bull; An exception is an error that produces a return value that can then be used by the program to deal with the error</p>
+        <p>&bull; An exception will also produce a stack trace. This is a sequence of functions or method calls that lead to the point where the error occurred</p>
+        <p>&bull; A warning can occur if there's an error in the code that isn't enough to cause the program to crash</p>
+        <p>&bull; ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features. This is due to the fact that strict mode considers coding practices that were previously accepted as just being 'poor style' as actual errors</p>
+        <p>&bull; Placing 'use strict' at the beginning of a file will enforce strict mode on all the JavaScript in the file</p>
+        <p>&bull; Linting tools such as JS Lint, JS Hint, and ES Lint can be used to test the quality of JavaScript code, beyond simply using strict mode</p>
+        <p>&bull; Debugging is the process of finding out where bugs occur in the code and then dealing with them</p>
+        <p>&bull; The most basic form of debugging is to use the alert() method to show a dialog at certain points in the code. Because alert() stops a program from running until OK is clicked, it allows us to effectively put breakpoints in the code that let us check the value of variables at that point to see if they're what we expect them to be</p>
+        <p>&bull; Most modern JavaScript environments have a console object that provides a number of methods for logging information and debugging</p>
+        <p>&bull; Most modern browsers also have a debugging tool that allows you to set breakpoints in your code that will pause it at certain points</p>
+        <p>&bull; An error object can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function</p>
+        <p>&bull; It's possible to throw your own exceptions using the throw statement. This will allow for any problems in your code to be highlighted and dealt with, rather than lurk quietly in the background</p>
+        <p>&bull; The throw statement can be applied to any JavaScript expression, causing the execution of the program to stop</p>
+        <p>&bull; When an exception occurs, the program terminates with an error message</p>
+        <p>&bull; Testing is an important part of programming that can often be overlooked. Writing good tests means your code will be less brittle as it develops, and any errors will be identified early on</p>
+        <p>&bull; Test-driven development(TDD) is the process of writing tests before any actual code and has the following workflow:</p>
+        <p class="indented">&bull; 1. Write tests (that initially fail)</p>
+        <p class="indented">&bull; 2. Write code to pass the tests</p>
+        <p class="indented">&bull; 3. Refactor the code</p>
+        <p class="indented">&bull; 4. Test refactored code</p>
+        <p class="indented">&bull; 5. Write more tests for new features</p>
+        <p>&bull; Jest is a TDD framework, created by Facebook, that has gained a lot of popularity recently. It makes it easy to create and run tests by providing helper methods for common test assertions</p>
+        <p>&bull; Any code placed inside a try block will pass any error objects to a catch block when an exception occurs. Any code inside a finally block will run if an exception does or does not occur</p>
     </main>
     <footer>
         <p><a href="/index.html">Portfolio</a>
