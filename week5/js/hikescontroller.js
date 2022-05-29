@@ -1,9 +1,9 @@
 //html file links to this main js page which links to the  HikeController js code
 //next we link to the HikeModel and HikesView js code
 //our HikeModel code sill store the list of hikes as the class HikeModel
-import HikeModel from "./HikeModel.js";
+import HikeModel from "./hikemodel.js";
 
-import HikesView from "./HikesView.js";
+import HikesView from "./hikesview.js";
 
 
 export default class HikesController {
