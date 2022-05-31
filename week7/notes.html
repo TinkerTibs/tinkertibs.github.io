@@ -14,8 +14,56 @@
         <h1>WDD 330</h1>
     </header>    
     <main>
-        <h2>Week 4 &bull; Notes</h2>
+        <h2>Week 7 &bull; Notes</h2>
         <hr>
+        <p>&bull; The fact that functions are first-class objects means they can have properties and methods themselves</p>
+        <p>&bull; The call() method can be used to set the value of this inside a function to an object that is provided as the first argument</p>
+        <p>&bull; There is nothing to stop you adding your own properties to functions in the same way that you can add properties to any object in JavaScript</p>
+        <p>&bull; If a function takes some time to compute a return value, we can save the result in a cache property. Then if the same argument is used again later, we can return the value from the cache, rather than having to compute the result again</p>
+        <p>&bull; An Immediately Invoked Function Expression - or IIFE - (pronounced 'iffy') is an anonymous function that, as the name suggests, is invoked as soon as it's defined. This is easily achieved by placing parentheses at the end of the function definition (remember we use parentheses to invoke a function). The function also has to be made into an expression, which is done by placing the whole declaration inside parentheses</p>
+        <p>&bull; IIFEs are a useful way of performing a task while keeping any variables wrapped up within the scope of the function. This means the global namespace is not polluted with lots of variable names</p>
+        <p>&bull; There is no way to remove a variable from a scope once it's been declared. If a variable is only required temporarily, it may cause confusion if it's still available later in the code. Even worse, the name of the variable may clash with another piece of code (an external JavaScript library, for example) resulting in errors. Placing any code that uses the temporary variable inside an IIFE will ensure it's only available while the IIFE is invoked, then it will disappear</p>
+        <p>&bull; An IIFE can be used to set up any initialization code that there'll be no need for again. Because the code is only run once, there's no need to create any reusable, named functions, and all the variables will also be temporary. An IIFE will be invoked once, and can set up any variables, objects and event handlers when the page loads</p>
+        <p>&bull; An IIFE can be used to enclose a block of code inside its own private scope so it doesn't interfere with any other part of the program. Using IIFEs in this way means code can be added or removed separately</p>
+        <p>&bull; The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. This is done by assigning an anonymous function to a variable that has the same name as the function. If the function is also assigned to another variable, this variable will maintain the original function definition and not be rewritten. This is because the original function is assigned to a variable, then within the function, a variable with the same name as the function is assigned to a different function</p>
+        <p>&bull; If any properties have previously been set on the function, these will be lost when the function redefines itself</p>
+        <p>&bull; A recursive function is one that invokes itself until a certain condition is met. It's a useful tool to use when iterative processes are involved</p>
+        <p>&bull; Callbacks are functions passed to other functions as arguments and then invoked inside the function they are passed to</p>
+        <p>&bull; Callbacks can be used to facilitate event-driven asynchronous programming</p>
+        <p>&bull; JavaScript is a single-threaded environment, which means only one piece of code will ever be processed at a time</p>
+        <p>&bull; The increase in the use of asynchronous programming in JavaScript has meant that more and more callbacks are being used. This can result in messy and confusing 'spaghetti code'. This is when more than one callback is used in the same function, resulting in a large number of nested blocks that are difficult to comprehend. Callback hell is the term used to refer to this tangled mess of code</p>
+        <p>&bull; A promise represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks</p>
+        <p>&bull; When a promise is created, it calls an asynchronous operation and is then said to be pending. It remains in this state while the operation is taking place. At this stage, the promise is said to be unsettled. Once the operation has completed, the promise is said to have been settled. A settled promise can result in two different outcomes</p>
+        <p class="indented">&bull; Resolved ― the asynchronous operation was completed successfully.</p>
+        <p class="indented">&bull; Rejected ― the asynchronous operation didn't work as expected, wasn't successfully completed or resulted in an error.</p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
+        <p>&bull; </p>
         <p>&bull; </p>
         <p>&bull; </p>
         <p>&bull; </p>
