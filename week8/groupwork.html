@@ -64,6 +64,86 @@
       footer p a:hover {
         color: rgba(143, 143, 143, 1);
       }
+
+
+
+      main {
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      table {
+        font-family: "Roboto", Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table td,
+      table th {
+        border: 1px solid rgb(219, 219, 219);
+        padding: 8px;
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgb(187, 187, 187);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 45, 104, 0.247);
+      }
+
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(0, 45, 104);
+        color: rgb(255, 255, 255);
+      }
+
+
+
+
+/* 
+
+      .hidden {
+        display: none;
+      }
+
+      #peoplelist td {
+        cursor: pointer;
+      }
+
+      #detailsbox {
+        flex: 1 0 15em;
+        padding: 1em;
+        text-align: center;
+        border: 2px solid;
+      }
+
+      #detailsbox dl {
+        border: 1px solid;
+        text-align: left;
+      }
+
+      #peoplelist {
+        /* display: flex; */
+        /* flex-flow: row wrap;
+        list-style-type: none;
+      }
+
+      #peoplelist thead {
+        background-color: lightgray;
+      }
+
+      #peoplelist tr {
+        border: 1px solid;
+        padding: 0.5em;
+        height: 44px;
+      }
+      #peoplelist tr:nth-child(even) {
+        background-color: azure;
+      } */ 
+
     </style>
   </head>
   <body>
@@ -71,43 +151,122 @@
       <h1>WDD 330</h1>
     </header>
     <main>
-      <h2>Week 4 &bull; Group Work</h2>
+      <h2>Week 8 &bull; Group Work</h2>
       <hr />
-      <h3><u>Core Requirements</u></h3>
-      <h3>Exercise 1</h3>
-      <div id="stepOne"></div>
-      <h3>Exercise 2</h3>
-      <div id="stepTwo"></div>
-      <h3>Exercise 3</h3>
-      <div id="stepThree"></div>
-      <h3>Exercise 4</h3>
-      <div id="stepFour"></div>
-      <h3>Exercise 5</h3>
-      <div id="stepFive"></div>
-      <h3><u>Stretch Goals</u></h3>
-      <h3>Exercise 7</h3>
-      <div id="stepSeven"></div>
-      <h3>Exercise 8</h3>
-      <div id="stepEight"></div>
-      <h3>Array Cardio Day 2</h3>
-      <div id="oneCardioTwo"></div>
-      <div id="twoCardioTwo"></div>
-      <div id="threeCardioTwo"></div>
-      <div id="fourCardioTwo"></div>
+      <div class="listbox">
+        <table id="peoplelist">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Height</th>
+              <th>Homeworld</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+
+        <a id="prev" href="#">&lt;-Prev</a> <a id="next" href="#">Next -&gt;</a>
+      </div>
+      <div id="detailsbox" class="hidden">
+        <dl>
+          <dt>Name</dt>
+          <dd class="name"></dd>
+          <dt>Gender</dt>
+          <dd class="gender"></dd>
+          <dt>Height</dt>
+          <dd class="height"></dd>
+          <dt>Homeworld</dt>
+          <dd class="homeworld"></dd>
+        </dl>
+      </div>
     </main>
     <footer>
       <p><a href="/index.html">Portfolio</a></p>
     </footer>
 
     <script>
- 
- 
 
+      //helper function to fetch the data from an external source and return it in JSON format
+      function getJSON(url) {
+        return fetch(url)
+          .then(function (response) {
+            if (!response.ok) {
+              throw Error(response.statusText);
+            } else {
+              return response.json();
+            }
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+      function getPeople(url) {
+        return getJSON(url);
+      }
+      //  View code
+      function renderPeopleList(people, peopleListElement) {
+        const list = peopleListElement.children[1];
+        list.innerHTML = "";
+        //loop through the people
+        people.forEach(function (person) {
+          //create elements for tr
+          let listItem = document.createElement("tr");
+          listItem.innerHTML = `
+        <td><a href="${person.url}">${person.name}</a></td>
+        <td>${person.gender}</td>
+        <td>${person.height}</td>
+        <td>${person.homeworld}</td>
+        `;
 
+          listItem.addEventListener("click", function (event) {
+            event.preventDefault();
+            getPeopleDetails(person.url);
+          });
+          list.appendChild(listItem);
+        });
+      }
+      // render the details to HTML
+      function renderPeopleDetails(peopleData) {
 
-    </script>
-    <script>
-      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
+       
+
+        console.log(peopleData);
+      }
+
+      // controller code
+      function showPeople(url = "https://swapi.dev/api/people/") {
+        getPeople(url).then(function (data) {
+          console.log(data);
+          const results = data.results;
+
+          //get the list element
+          const peopleListElement = document.getElementById("peoplelist");
+          renderPeopleList(results, peopleListElement);
+
+          // enable the next and prev buttons.
+          if (data.next) {
+            const next = document.getElementById("next");
+            next.onclick = () => {
+              showPeople(data.next);
+            };
+          }
+          if (data.previous) {
+            const prev = document.getElementById("prev");
+            prev.onclick = () => {
+              showPeople(data.previous);
+            };
+          }
+        });
+      }
+
+      function getPeopleDetails(url) {
+        getPeople(url).then(function (data) {
+          renderPeopleDetails(data);
+        });
+      }
+      showPeople();
     </script>
   </body>
 </html>
