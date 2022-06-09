@@ -14,24 +14,39 @@
         <h1>WDD 330</h1>
     </header>    
     <main>
-        <h2>Week 4 &bull; Notes</h2>
+        <h2>Week 8 &bull; Notes</h2>
         <hr>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
-        <p>&bull; </p>
+        <p>&bull; The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page.</p>
+        <p>&bull; We can manipulate an element's appearance using transform functions. The value of the transform property is one or more transform functions (separated by spaces) that will be applied in the order they're provided.</p>
+        <p>&bull; Translation functions allow you to move elements left, right, up, or down.</p>
+        <p>&bull; If you only want to move an element vertically or horizontally, you can use the translatex or translatey functions respectively.</p>
+        <p>&bull; Transforms don't work on inline elements.</p>
+        <p>&bull; The scale(x,y) function scales an element by the defined factors horizontally then vertically.</p>
+        <p>&bull; It's also worth remembering that scaling, like translation, has no impact on the document flow. This means that if you scale inline-block elements, text around it will fail to accommodate it with reflowing.</p>
+        <p>&bull; The rotate() function rotates an element around the point of origin by a specified angle value.</p>
+        <p>&bull; The skew(x,y) function specifies a skew along the x and y axes.</p>
+        <p>&bull; You can also scale an element by altering its width and height, or changing the font-size. Remember, though, that while transformed elements still take up the space they did before being scaled, altering a width, height or font-size alters the space allocated for the element and can affect the layout.</p>
+        <p>&bull; Animation has certainly been possible for some time with JavaScript, but native CSS transitions generally require less client-side processing, so theyill usually appear smoother.</p>
+        <p>&bull; The transition-property property defines the CSS properties of the element that should be transitioned, with all for all properties being the default.</p>
+        <p>&bull; The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state.</p>
+        <p>&bull; The transition-timing-function lets you control the pace of the transition in even more granular detail.</p>
+        <p>&bull; By using the transition-delay property, it's possible to introduce a delay before the transition begins.</p>
+        <p>&bull; The transition properties allow for multiple transitions in one call.</p>
+        <p>&bull; Transitions animate elements over time; however, they're limited in what they can do. You can define starting and ending states, but there's no fine-grained control over any intermediate states. CSS animations, unlike transitions, allow you to control each step of an animation via keyframes.</p>
+        <p>&bull; To animate an element in CSS, you first create a named animation, then attach it to an element in that element's property declaration block.</p>
+        <p>&bull; The canvas element takes both a width and height attribute, which must also be set.</p>
+        <p>&bull; All drawing on the canvas happens via the Canvas JavaScript API.</p>
+        <p>&bull; Once we've stored our canvas element in a variable, we then set up the canvas's context. The context is the place where your drawing is rendered.</p>
+        <p>&bull; On a real-life painting canvas, you must first saturate your brush with paint before you can begin. In the HTML5 canvas, you must do the same, and we do so with the strokeStyle or fillStyle properties. Both strokeStyle and fillStyle are set on a context object, and both take one of three values: a string representing a color, a CanvasGradient object, or a CanvasPattern object.</p>
+        <p>&bull; Instead of a color as our fillStyle, we could have used a CanvasGradient or a CanvasPattern object.</p>
+        <p>&bull; Paths create a blueprint for your lines, arcs, and shapes, but paths are invisible until you give them a stroke!</p>
+        <p>&bull; If we create an image programmatically using the Canvas API, but decide we'd like to have a local copy of our drawing, we can use the API's toDataURL method to save our drawing.</p>
+        <p>&bull; We can also draw images onto the canvas element.</p>
+        <p>&bull; Redrawing an image element from the page onto a canvas is fairly unexciting. It's really no different from using an img element. Where it does become interesting is how we can manipulate an image after we've drawn it into the canvas. Once we've drawn an image on the canvas, we can use the getImageData method from the Canvas API to manipulate the pixels of that image.</p>
+        <p>&bull; SVG stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics using XML.</p>
+        <p>&bull; Raphaël is an open-source JavaScript library that makes drawing and animating with SVG much easier.</p>
+        <p>&bull; Both canvas and SVG allow you to draw custom shapes, paths, and fonts.</p>
+        <p>&bull; DataTransfer objects are one type of object outlined in the Drag and Drop API. These objects allow us to set and get data about the elements that are being dragged. Specifically, DataTransfer lets us define two pieces of information: 1. the type of data we're saving of the draggable element and 2. the value of the data itself</p>
     </main>
     <footer>
         <p><a href="/index.html">Portfolio</a>
