@@ -12,7 +12,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
       header,
       footer,
-      main {
+      body {
         max-width: 1000px;
         margin: 0 auto;
       }
@@ -26,7 +26,7 @@
         margin-bottom: 15px;
         margin-top: 10px;
       }
-      main,
+      body,
       footer {
         font-size: 16px;
         font-family: "Roboto", Arial, sans-serif;
@@ -64,50 +64,47 @@
       footer p a:hover {
         color: rgba(143, 143, 143, 1);
       }
+
+
+
+        .quake {
+            margin: 10px 0px;
+            padding: 5px;
+            border: black solid 1px;
+            list-style: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
     </style>
   </head>
   <body>
     <header>
       <h1>WDD 330</h1>
     </header>
-    <main>
+    <div>
       <h2>Week 10 &bull; Group Work</h2>
-      <hr />
-      <h3><u>Core Requirements</u></h3>
-      <h3>Exercise 1</h3>
-      <div id="stepOne"></div>
-      <h3>Exercise 2</h3>
-      <div id="stepTwo"></div>
-      <h3>Exercise 3</h3>
-      <div id="stepThree"></div>
-      <h3>Exercise 4</h3>
-      <div id="stepFour"></div>
-      <h3>Exercise 5</h3>
-      <div id="stepFive"></div>
-      <h3><u>Stretch Goals</u></h3>
-      <h3>Exercise 7</h3>
-      <div id="stepSeven"></div>
-      <h3>Exercise 8</h3>
-      <div id="stepEight"></div>
-      <h3>Array Cardio Day 2</h3>
-      <div id="oneCardioTwo"></div>
-      <div id="twoCardioTwo"></div>
-      <div id="threeCardioTwo"></div>
-      <div id="fourCardioTwo"></div>
-    </main>
+      <hr/>
+
+      <main id="content">
+        <h1>Quake List</h1>
+        <ul id="quakeList" class="hikeStyles"></ul>
+      </main>
+
+
+
+    </div>
     <footer>
       <p><a href="/index.html">Portfolio</a></p>
     </footer>
 
-    <script>
- 
- 
+      <script src="js/index.js" type="module"></script>
 
-
-
-    </script>
-    <script>
-      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
-    </script>
   </body>
 </html>
