@@ -64,6 +64,29 @@
       footer p a:hover {
         color: rgba(143, 143, 143, 1);
       }
+
+      .errors {
+        border: 1px solid rgb(172, 14, 14);
+        background-color: rgb(250, 148, 148);
+        padding: 0.5em;
+      }
+      form input {
+        margin: 0.5em 0;
+        font-size: 1.4em;
+        background-color: rgb(243, 231, 215);
+        width: 300px;
+      }
+      form button {
+        font-size: 1.2em;
+        padding: 0.4em;
+        background-color: rgb(107, 151, 233);
+      }
+      input:invalid {
+        box-shadow: 0 0 5px 1px rgb(247, 2, 2);
+      }
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -73,41 +96,69 @@
     <main>
       <h2>Week 11 &bull; Group Work</h2>
       <hr />
-      <h3><u>Core Requirements</u></h3>
-      <h3>Exercise 1</h3>
-      <div id="stepOne"></div>
-      <h3>Exercise 2</h3>
-      <div id="stepTwo"></div>
-      <h3>Exercise 3</h3>
-      <div id="stepThree"></div>
-      <h3>Exercise 4</h3>
-      <div id="stepFour"></div>
-      <h3>Exercise 5</h3>
-      <div id="stepFive"></div>
-      <h3><u>Stretch Goals</u></h3>
-      <h3>Exercise 7</h3>
-      <div id="stepSeven"></div>
-      <h3>Exercise 8</h3>
-      <div id="stepEight"></div>
-      <h3>Array Cardio Day 2</h3>
-      <div id="oneCardioTwo"></div>
-      <div id="twoCardioTwo"></div>
-      <div id="threeCardioTwo"></div>
-      <div id="fourCardioTwo"></div>
+      <h3 class="text-center"><u>Authentication Example</u></h3>
+      <div id="errors" class="errors hidden"></div>
+      <div id="login">
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Username"
+              value="user1@email.com"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <button type="button" class="btn btn-primary center-block">
+            Login
+          </button>
+        </form>
+        <div id="token-display"></div>
+      </div>
+
+      <div id="content" class="hidden">
+        <form name="postForm">
+          <div>
+            <label for="title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              placeholder="title"
+              required
+            />
+          </div>
+          <div>
+            <label for="content">Content</label>
+            <input
+              type="text"
+              class="form-control"
+              name="content"
+              placeholder="content"
+              required
+            />
+          </div>
+          <div id="postError"></div>
+
+          <input type="submit" id="createSubmit" />
+        </form>
+        <ul id="list"></ul>
+      </div>
     </main>
     <footer>
       <p><a href="/index.html">Portfolio</a></p>
     </footer>
 
-    <script>
- 
- 
-
-
-
-    </script>
-    <script>
-      WebFont.load({ google: { families: ["Roboto", "Milonga"] } });
-    </script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

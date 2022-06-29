@@ -2,10 +2,16 @@
     "series": [
       {
         "seriesname":"Harry Potter",
+        "authorname":"J.K. Rowling",
+        "genre": "Contemporary Fantasy, Young Adult",
+        "sitelink": "/week14/series/potter.html",
         "summary": "<p>The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).</p>"
       },
       {
         "seriesname":"Partials",
+        "authorname":"Dan Wells",
+        "genre": "Science Fiction, Young Adult, Dystopian",
+        "sitelink": "/week14/series/partials.html",
         "summary": "<p>Humanity is all but extinguished after a war with partials-engineered organic beings identical to humans-has decimated the world's population. Reduced to only tens of thousands by a weaponized virus to which only a fraction of humanity is immune, the survivors in North America have huddled together on Long Island.</p>"
       }
     ]

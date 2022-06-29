@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  max-width: 80em;
+  margin: 0 auto;
+}
+header,
+footer {
+  background-color: rgba(94, 138, 204, 80);
+  color: rgba(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+footer p a {
+  color: rgba(255, 255, 255, 1);
+}
+footer p a:hover {
+  color: rgba(11, 33, 66, 26);
+}
+/* top heading */
+.logolink {
+  float: left;
+}
+.topheading img {
+  float: left;
+  height: 19px;
+  margin-left: 10px;
+}
+.topheading {
+	text-align: right;
+	border: 2px solid rgba(11, 33, 66, 26);
+	padding-top: 10px;
+	padding-bottom: 10px;
+  background-color: rgba(23, 71, 143, 56);
+}
+.profilelink {
+	border-left: 2px solid rgba(11, 33, 66, 26);
+	padding-left: 25px;
+  padding-right: 25px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+}
+.profilelink:hover {
+	color: rgba(11, 33, 66, 26);
+}
+/* typography */
+h1 {
+  font-family: "Philosopher", "Arial Black", fantasy;
+  font-size: 50px;
+}
+p {
+  font-size: 18px;
+}
+a {
+	text-decoration: none;
+}
+/* main page book cover area */
+.allbooks {
+  padding: 15px;
+  border: 2px solid rgba(11, 33, 66, 26);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.allbooks div {
+  margin: 10px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.allbooks img {
+  max-width: 200px;
+  box-shadow: 0 0 15px #000000;
+}
+/* single book view page */
+.singlebook {
+  padding: 15px;
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+.innerbookdiv {
+  display: grid;
+  grid-template-columns: 230px auto;
+}
+.booksection1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.booksection2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.booksection3 {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.singlebook img {
+  max-width: 200px;
+  box-shadow: 0 0 15px #000000;
+  margin: 10px;
+}
+.singlebook h2 {
+  font-size: 40px;
+  color: rgba(23, 71, 143, 56);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.singlebook h3 a {
+  color: rgba(23, 71, 143, 56);
+}
+.singlebook h3 {
+  font-size: 25px;
+  color: rgba(23, 71, 143, 56);
+  margin-top: 0px;
+}
+.singlebook h3 a {
+  color: rgba(23, 71, 143, 56);
+}
+.singlebook h3 a:hover {
+  color: rgba(94, 138, 204, 80);
+}
+.singlebook h4 {
+  font-size: 25px;
+  margin: 0;
+}
+/* back button on single book view pages */
+.backFromBook {
+  float: right;
+  padding: 10px;
+  background-color: rgba(23, 71, 143, 56);
+  border: 2px solid rgba(11, 33, 66, 26);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+/* single series view page */
+.seriespagediv {
+  padding: 15px;
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+.singleseriesfirst h2 {
+  font-size: 40px;
+  color: rgba(23, 71, 143, 56);
+  margin: 0;
+}
+.singleseriesfirst h3 {
+  font-size: 25px;
+  color: rgba(23, 71, 143, 56);
+}
+.singleseriessecond {
+  margin-left: 30px;
+}
+.singleseriessecond p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+/* smaller screen views */
+@media only screen and (max-width: 60em) {
+  .singlebook h2 {
+    font-size: 30px;
+  }
+  .singlebook h3 {
+    font-size: 20px;
+  }
+  .singlebook h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 49em) {
+  .singlebook h2 {
+    font-size: 22px;
+  }
+  .singlebook h3 {
+    font-size: 18px;
+  }
+  .singlebook h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 41em) {
+  .booksection1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .booksection2 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .booksection3 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
