@@ -40,7 +40,7 @@ fetch(bookURL)
       let seriesdivtwo = document.createElement("div");
       let p = document.createElement("p");
       //use templet Literals
-      p.innerHTML = `${book.seriesnumber} &emsp; ${book.title}`;
+      p.innerHTML = `${book.seriesnumber} &emsp; <a href=${book.sitelink}>${book.title}</a>`;
       seriesdivtwo.append(p);
       singleseriessecond.append(seriesdivtwo);
     });

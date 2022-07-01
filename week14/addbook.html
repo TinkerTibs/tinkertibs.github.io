@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my second challenge assignment for WDD 330."
+    />
+  <title>WDD 330 &bull; Challenge 2</title>
+  <link rel="stylesheet" href="css/normal.css">
+  </head>
+  <body>
+    <div class="topheading">
+      <a class="logolink" href="/week14/home.html"><img src="/week14/images/booklogo.png"></a>
+      <a class="profilelink" href="/week14/profile.html">Profile</a>
+    </div>
+    <header>
+      <h1>Book Collection</h1>
+    </header>
+    <main>
+      <div class="addBookDiv">
+          <h2>Find or Add a Book</h2>
+            <div id="addbooksectioncontatiner">
+              <div id="addbooksectionone">
+                <label>Title<input id="bookTitle" placeholder="Harry Potter and the Sorcerer's Stone"></input></label>
+              </div>
+              <div id="addbooksectiontwo">
+                <label>Series<input id="bookseries" placeholder="Harry Potter"></input></label>
+                <label>Series Number<input id="bookSeriesNumber" placeholder="1"></input></label>
+                <label>Author<input id="bookAuthor" placeholder="J.K. Rowling"></input></label>
+                <label>Narrator<input id="bookNarrator" placeholder="Jim Dale"></input></label>
+              </div>
+              <div id="addbooksectionthree">
+                <label>Year Published<input id="bookYear" placeholder="1997"></input></label>
+                <label>Formats Owned<input id="bookOwned" placeholder="Hardback, Audible"></input></label>
+                <label>Genre<input id="bookGenre" placeholder="Contemporary Fantasy, Young Adult"></input></label>
+                <label>Rating<input id="bookRating" placeholder="5"></input></label>
+              </div>
+              <div id="addbooksectionfour">
+                <label>Summary<textarea id="bookSummary" placeholder="Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard."></textarea></label>
+              </div>
+            </div>
+        <section>
+          <button onclick="loadBook()">Find and Edit It</button>
+          <button onclick="saveBook()">Save It</button>
+          <button onclick="displayBook()">Display It</button>
+        </section>
+        <hr>
+        <section id="addBookViewBook">
+          <h2><span id="displayTitle"></span></h2>
+          <h3><span id="displaySeries"></span><span id="displaySeriesNumber"></span></h3>
+          <h4 id="displayAuthor"></h4>
+          <p id="displayNarrator"></p>
+          <i><p id="displayYear"></p></i>
+          <p id="displayFormat"></p>
+          <p id="displayGenre"></p>
+          <p id="displayRating"></p>
+          <p id="displaySummary"></p>
+        </section>
+
+      </div>
+    </main>
+    <footer>
+      <p><a href="/index.html">Portfolio</a></p>
+    </footer>
+    <script src="js/addbook.js"></script>
+  </body>
+</html>

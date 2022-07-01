@@ -49,8 +49,9 @@ h1 {
   font-family: "Philosopher", "Arial Black", fantasy;
   font-size: 50px;
 }
-p {
+p, input, textarea {
   font-size: 18px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 a {
 	text-decoration: none;
@@ -71,6 +72,28 @@ a {
 .allbooks img {
   max-width: 200px;
   box-shadow: 0 0 15px #000000;
+}
+.searchbooks {
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+/* search area - main page */
+.searchbooks {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#searchInputTitle {
+  width: 41%;
+}
+#searchInputAuthor {
+  width: 25%;
+}
+#searchInputGenre {
+  width: 25%;
+}
+.searchbooks input {
+  padding: 10px;
+  margin: 5px;
 }
 /* single book view page */
 .singlebook {
@@ -119,7 +142,7 @@ a {
   font-size: 25px;
   margin: 0;
 }
-/* back button on single book view pages */
+/* back button on single book/series view pages */
 .backFromBook {
   float: right;
   padding: 10px;
@@ -149,42 +172,159 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
+.singleseriessecond a {
+  color: rgba(94, 138, 204, 80);
+}
+.singleseriessecond a:hover {
+  color: rgba(23, 71, 143, 56);
+}
+/* profile page */
+.profilePage {
+  border: 2px solid rgba(11, 33, 66, 26);
+  display: grid;
+  grid-template-columns: 230px auto;
+}
+#profileOne {
+  padding: 15px;
+  border-right: 2px solid rgba(11, 33, 66, 26);
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: center;
+  font-weight: bold;
+}
+#profileTwo {
+  padding: 15px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.profilePage a {
+  color: rgba(94, 138, 204, 80);
+}
+.profilePage a:hover {
+  color: rgba(23, 71, 143, 56);
+}
+#announcement {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(11, 33, 66, 26);
+  padding: 15px;
+  border: 4px solid rgba(94, 138, 204, 80);
+}
+/* add book page */
+.addBookDiv {
+  border: 2px solid rgba(11, 33, 66, 26);
+  padding: 15px;
+}
+/* add book page - input area */
+#addbooksectioncontatiner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 10px;
+}
+#addbooksectionone {
+  grid-area: 1 / 1 / 2 / 3;
+}
+#addbooksectiontwo {
+  grid-area: 2 / 1 / 3 / 2;
+  padding-right: 10px;
+}
+#addbooksectionthree {
+  grid-area: 2 / 2 / 3 / 3;
+  padding-left: 10px;
+}
+#addbooksectionfour {
+  grid-area: 3 / 1 / 4 / 3;
+}
+.addBookDiv input, .addBookDiv textarea {
+  padding: 5px;
+  margin: 5px;
+}
+.addBookDiv label {
+	display: block; 
+  padding: 5px;
+}
+.addBookDiv textarea {
+	min-height: 100px; 
+  max-width: 1216px;
+}
+.addBookDiv input, .addBookDiv textarea {
+  padding: 10px;
+  margin-top: 2px;
+  border: solid .5px #000000;
+  border-radius: 4px;
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(94, 138, 204, .30);
+}
+/* add book page - buttons */
+.addBookDiv button {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(23, 71, 143, 56);
+  border: 2px solid rgba(11, 33, 66, 26);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+/* add book page - displaying the book */
+#addBookViewBook h2 {
+  font-size: 40px;
+  color: rgba(23, 71, 143, 56);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+#addBookViewBook h3 {
+  font-size: 25px;
+  color: rgba(23, 71, 143, 56);
+  margin-top: 0px;
+}
+#addBookViewBook h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
 
 
 
 
 /* smaller screen views */
 @media only screen and (max-width: 60em) {
-  .singlebook h2 {
+  .singlebook h2, #addBookViewBook h2 {
     font-size: 30px;
   }
-  .singlebook h3 {
+  .singlebook h3, #addBookViewBook h3 {
     font-size: 20px;
   }
-  .singlebook h4 {
+  .singlebook h4, #addBookViewBook h4 {
     font-size: 20px;
   }
-  p {
+  p, .addBookDiv input, .addBookDiv textarea {
     font-size: 16px;
   }
 }
-
-
 @media only screen and (max-width: 49em) {
-  .singlebook h2 {
+  .singlebook h2, #addBookViewBook h2 {
     font-size: 22px;
   }
-  .singlebook h3 {
+  .singlebook h3, #addBookViewBook h3 {
     font-size: 18px;
   }
-  .singlebook h4 {
+  .singlebook h4, #addBookViewBook h4 {
     font-size: 18px;
   }
-  p {
+  p, .addBookDiv input, .addBookDiv textarea {
     font-size: 14px;
   }
+  .searchbooks {
+    flex-direction: column;
+  }
+  #searchInputTitle {
+    width: 95%;
+  }
+  #searchInputAuthor {
+    width: 95%;
+  }
+  #searchInputGenre {
+    width: 95%;
+  }
 }
-
 @media only screen and (max-width: 41em) {
   .booksection1 {
     grid-area: 1 / 1 / 2 / 3;
@@ -194,5 +334,19 @@ a {
   }
   .booksection3 {
     grid-area: 3 / 1 / 4 / 3;
+  }
+  #addbooksectionone {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #addbooksectiontwo {
+    grid-area: 2 / 1 / 3 / 3;
+    padding-right: 0px;
+  }
+  #addbooksectionthree {
+    grid-area: 3 / 1 / 4 / 3;
+    padding-left: 0px;
+  }
+  #addbooksectionfour {
+    grid-area: 4 / 1 / 5 / 3;
   }
 }
