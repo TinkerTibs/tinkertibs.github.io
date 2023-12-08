@@ -1,0 +1,144 @@
+{
+  "books": [
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypotterone.jpg"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypottertwo.jpg"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypotterthree.jpg"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypotterfour.jpg"
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypotterfive.jpg"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypottersix.jpg"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows",
+      "authorfirstname": "J.K.",
+      "authorlastname": "Rowling",
+      "genre": "Contemporary Fantasy, Young Adult",
+      "image": "images/harrypotterseven.jpg"
+    },
+    {
+      "title": "All Our Yesterdays",
+      "authorfirstname": "Cristin",
+      "authorlastname": "Terrill",
+      "genre": "Science Fiction, Young Adult",
+      "image": "images/allouryesterdays.jpg"
+    },
+    {
+      "title": "Partials",
+      "authorfirstname": "Dan",
+      "authorlastname": "Wells",
+      "genre": "Science Fiction, Young Adult, Dystopian",
+      "image": "images/partialsone.jpg"
+    },
+    {
+      "title": "Fragments",
+      "authorfirstname": "Dan",
+      "authorlastname": "Wells",
+      "genre": "Science Fiction, Young Adult, Dystopian",
+      "image": "images/partialstwo.jpg"
+    },
+    {
+      "title": "Ruins",
+      "authorfirstname": "Dan",
+      "authorlastname": "Wells",
+      "genre": "Science Fiction, Young Adult, Dystopian",
+      "image": "images/partialsthree.jpg"
+    },
+    {
+      "title": "Among the Beasts & Briars",
+      "authorfirstname": "Ashley",
+      "authorlastname": "Poston",
+      "genre": "Fantasy, Young Adult",
+      "image": "images/amoungthebeasts.jpg"
+    },
+    {
+      "title": "Stepsister",
+      "authorfirstname": "Jennifer",
+      "authorlastname": "Donnelly",
+      "genre": "Fairy Tale, Young Adult",
+      "image": "images/stepsister.jpg"
+    },
+    {
+      "title": "The Statistical Probability of Love at First Sight",
+      "authorfirstname": "Jennifer E.",
+      "authorlastname": "Smith",
+      "genre": "Romance, Young Adult",
+      "image": "images/statisticalprobability.jpg"
+    },
+    {
+      "title": "Looking for Alaska",
+      "authorfirstname": "John",
+      "authorlastname": "Green",
+      "genre": "Young Adult",
+      "image": "images/lookingforalaska.jpg"
+    },
+    {
+      "title": "Tell Me Three Things",
+      "authorfirstname": "Julie",
+      "authorlastname": "Buxbaum",
+      "genre": "Romance, Young Adult",
+      "image": "images/tellmethreethings.jpg"
+    },
+    {
+      "title": "By Your Side",
+      "authorfirstname": "Kasie",
+      "authorlastname": "West",
+      "genre": "Romance, Young Adult",
+      "image": "images/byyourside.jpg"
+    },
+    {
+      "title": "The Siren",
+      "authorfirstname": "Kiera",
+      "authorlastname": "Cass",
+      "genre": "Romance, Young Adult",
+      "image": "images/thesiren.jpg"
+    },
+    {
+      "title": "Heartless",
+      "authorfirstname": "Marissa",
+      "authorlastname": "Meyer",
+      "genre": "Fairy Tale, Young Adult",
+      "image": "images/heartless.jpg"
+    },
+    {
+      "title": "Everything, Everything",
+      "authorfirstname": "Nicola",
+      "authorlastname": "Yoon",
+      "genre": "Romance, Young Adult",
+      "image": "images/everything.jpg"
+    }
+  ]
+}

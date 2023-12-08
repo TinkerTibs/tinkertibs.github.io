@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my final assignment for CSE 121 b."
+    />
+  <title>CSE 121 b &bull; Final Assignment</title>
+  <link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
+    <div class="topheading">
+      <a class="logolink" href="project.html"><img src="images/booklogo.png"></a>
+      <a class="profilelink" href="index.html">Home</a>
+    </div>
+    <header>
+      <h1>Book Collection</h1>
+    </header>
+    <main>
+      <div class="searchbooks">
+        <input type="text" id="searchInputTitle" onkeyup="searchBookTitles()" placeholder="Search Book Titles..">
+        <input type="text" id="searchInputAuthor" onkeyup="searchBookAuthor()" placeholder="Search Authors..">
+        <input type="text" id="searchInputGenre" onkeyup="searchBookGenre()" placeholder="Search Genre..">
+        </select>
+      </div>
+      <div class="allbooks"></div>
+    </main>
+    <footer>
+      <p>Christina Thibodeau | CSE 121b | <a href="index.html">Home</a></p>
+    </footer>
+    <script src="scripts/project.js"></script>
+  </body>
+</html>

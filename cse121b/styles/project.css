@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  max-width: 80em;
+  margin: 0 auto;
+}
+header,
+footer {
+  background-color: rgba(94, 138, 204, 80);
+  color: rgba(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+footer p a {
+  color: rgba(255, 255, 255, 1);
+}
+footer p a:hover {
+  color: rgba(11, 33, 66, 26);
+}
+/* top heading */
+.logolink {
+  float: left;
+}
+.topheading img {
+  float: left;
+  height: 19px;
+  margin-left: 10px;
+}
+.topheading {
+	text-align: right;
+	border: 2px solid rgba(11, 33, 66, 26);
+	padding-top: 10px;
+	padding-bottom: 10px;
+  background-color: rgba(23, 71, 143, 56);
+}
+.profilelink {
+	border-left: 2px solid rgba(11, 33, 66, 26);
+	padding-left: 25px;
+  padding-right: 25px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+}
+.profilelink:hover {
+	color: rgba(11, 33, 66, 26);
+}
+/* typography */
+h1 {
+  font-family: "Philosopher", "Arial Black", fantasy;
+  font-size: 50px;
+}
+p, input, textarea {
+  font-size: 18px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+/* main page book cover area */
+.allbooks {
+  padding: 15px;
+  border: 2px solid rgba(11, 33, 66, 26);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.allbooks div {
+  margin: 10px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.allbooks img {
+  max-width: 200px;
+  box-shadow: 0 0 15px #000000;
+}
+.searchbooks {
+  border: 2px solid rgba(11, 33, 66, 26);
+}
+/* search area - main page */
+.searchbooks {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#searchInputTitle {
+  width: 41%;
+}
+#searchInputAuthor {
+  width: 25%;
+}
+#searchInputGenre {
+  width: 25%;
+}
+.searchbooks input {
+  padding: 10px;
+  margin: 5px;
+}
+
+
+/* smaller screen views */
+@media only screen and (max-width: 49em) {
+  .searchbooks {
+    flex-direction: column;
+  }
+  #searchInputTitle {
+    width: 95%;
+  }
+  #searchInputAuthor {
+    width: 95%;
+  }
+  #searchInputGenre {
+    width: 95%;
+  }
+}
