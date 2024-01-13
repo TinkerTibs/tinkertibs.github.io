@@ -10,7 +10,7 @@ function add(number1, number2) {
 function addNumbers() {
     let addNumber1 = parseInt(document.querySelector('#add1').value);
     let addNumber2 = parseInt(document.querySelector('#add2').value);
-    document.getElementById('sum').value = add(addNumber1, addNumber2);    
+    document.getElementById('sum').value = add(addNumber1, addNumber2);   
 };
 
 document.querySelector('#addNumbers').addEventListener('click', addNumbers);

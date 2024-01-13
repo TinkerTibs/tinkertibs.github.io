@@ -39,3 +39,4 @@ foodElement.innerHTML += `<br>${favFood}`;
 /* Bye Bye Burritos :( Why did you have to be last in the list!!! */
 favFood.pop();
 foodElement.innerHTML += `<br>${favFood}`;
+
